@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react'
-import { FaLongArrowAltRight } from 'react-icons/Fa'
+import { FaLongArrowAltRight } from 'react-icons/fa'
 
 import styles from './DropDown.module.scss'
 import { IDropDown } from './dropDown.interface'
