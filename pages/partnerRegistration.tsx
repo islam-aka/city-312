@@ -1,11 +1,11 @@
 import React, { FC } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
-import { FaWhatsapp } from 'react-icons/Fa'
-import { FaTelegramPlane } from 'react-icons/Fa'
 import { ImFacebook } from 'react-icons/Im'
 import { AiFillInstagram } from 'react-icons/ai'
 import { AiFillYoutube } from 'react-icons/ai'
 import { BsCheck, BsCheckLg } from 'react-icons/bs'
+import { FaWhatsapp } from 'react-icons/fa'
+import { FaTelegramPlane } from 'react-icons/fa'
 
 import DropDown from '@/components/layout/DropDown/DropDown'
 import { dayDropDownMenu } from '@/components/layout/DropDown/dropDown.data'
