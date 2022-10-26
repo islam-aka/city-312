@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react'
+import { FaLongArrowAltRight } from 'react-icons/Fa'
 
-// import { FaLongArrowAltRight } from 'react-icons/Fa'
 import styles from './DropDown.module.scss'
 import { IDropDown } from './dropDown.interface'
 
@@ -19,7 +19,9 @@ const DropDown: FC<IDropDown> = ({ state, setState, arr: { items } }) => {
 			>
 				<span className={styles.select}>{state}</span>
 
-				<div>{/* <FaLongArrowAltRight color="#F5C521" size={'40px'} /> */}</div>
+				<div>
+					<FaLongArrowAltRight color="#F5C521" size={'40px'} />
+				</div>
 			</div>
 
 			<div
