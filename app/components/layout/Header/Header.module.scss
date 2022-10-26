@@ -1,0 +1,76 @@
+.header {
+	@apply fixed left-0 top-0 w-full z-10 ease-in duration-300 bg-primary;
+
+	&Container {
+		@apply max-w-[70.625rem] px-5 py-3 m-auto flex items-center justify-between;
+
+		// Logo
+		a {
+			@apply flex items-center gap-3;
+			@apply md:gap-3;
+			span {
+				@apply block text-base max-w-[10rem] leading-5;
+				@apply lg:text-[0.5rem] lg:max-w-[5rem] leading-[.9rem];
+				@apply md:text-[0.75rem] md:max-w-[7.5rem];
+			}
+		}
+
+		// NavMenu
+		.headerNavMenuDesktop {
+			@apply hidden lg:block;
+			ul {
+				@apply flex items-center gap-4;
+				li {
+					a {
+						@apply text-[0.625rem] hover:text-yellow-700 ease-in duration-300;
+						@apply md:text-[0.875rem];
+					}
+				}
+			}
+		}
+
+		// HeaderBtn
+		.headerBtn {
+			@apply hidden lg:flex gap-4;
+			@apply lg:gap-6;
+		}
+
+		// HeaderMobileBtn
+		.mobileBtn {
+			@apply block sm:hidden z-10;
+		}
+
+		// MobileMenu-block
+		.mobileMenu {
+			@apply sm:hidden absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center gap-10 items-center w-full h-screen bg-primary text-center ease-in duration-300;
+
+			a {
+				@apply flex flex-col items-center justify-center gap-5;
+				span {
+					@apply text-base uppercase leading-[1.188rem] max-w-[11.063rem] text-center;
+				}
+			}
+
+			ul {
+				@apply flex flex-col gap-6 items-center justify-center;
+				li {
+					a {
+						@apply text-xl font-normal hover:text-yellow-700 duration-300;
+					}
+				}
+			}
+
+			.headerBtnMobile {
+				@apply flex flex-col gap-3;
+
+				button {
+					@apply shadow hover:shadow-[0_35px_60px_-15px_rgba(0,0,0,0.4)] duration-300;
+				}
+			}
+		}
+	}
+}
+
+.mobileMenuClose {
+	@apply hidden absolute top-0 left-[-100%] right-0 bottom-0  flex-col justify-center gap-10 items-center w-full h-screen bg-primary text-center ease-in duration-300;
+}

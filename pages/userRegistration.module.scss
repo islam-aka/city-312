@@ -1,0 +1,47 @@
+.userRegistration {
+	@apply bg-primary w-full text-gray-300 font-['Gilroy-regular'] pb-12;
+
+	&__container {
+		@apply mx-auto pt-[30px] md:w-[408px]  lg:w-[333px] w-[290px];
+
+		h2 {
+			@apply not-italic font-bold text-[20px] leading-[27px] text-center;
+		}
+		.userRegistration__form {
+			@apply mt-12 lg:mt-7 grid gap-3;
+
+			p {
+				@apply text-[18px] leading-[19px] text-gray-300 mb-[6px] opacity-70;
+			}
+			input {
+				@apply sm:text-[14px];
+				@apply leading-[17px] text-[16px]  md:text-[18px] w-[100%] focus:outline-none;
+			}
+			input:first-child {
+				@apply placeholder:font-normal;
+			}
+		}
+		.userRegistration__offer {
+			@apply flex justify-between my-8 w-40 mx-auto;
+			svg {
+				@apply w-[17px] h-[13px];
+			}
+			p {
+				@apply text-[16px] leading-[17px] text-white;
+			}
+		}
+		.userRegistration__reCaptcha {
+			@apply flex justify-center;
+		}
+		.userRegistration__btn {
+			@apply text-center mt-6 text-[16px] leading-5;
+
+			button {
+				@apply w-[240px]  text-black-900  mb-3;
+			}
+			p {
+				@apply text-red-400;
+			}
+		}
+	}
+}

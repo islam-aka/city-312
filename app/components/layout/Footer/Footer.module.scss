@@ -1,0 +1,92 @@
+.footer__wrapper {
+	@apply bg-gray-900 xl:py-[80px]  font-['Gilroy-regular'] w-full;
+	.footer {
+		@apply max-w-[1130px] px-5 md:py-[30px] py-[40px];
+		@apply flex items-center justify-between lg:flex-row  flex-col text-gray-600 mx-auto;
+
+		div:first-child {
+			a {
+				@apply flex items-center justify-between md:flex-row  flex-col sm:leading-[12px] sm:text-[10px] sm:h-20;
+				@apply sm:w-[95px];
+				@apply w-[125px] md:w-[177px] xl:text-[12px] text-center md:text-start mb-4 lg:mb-0;
+
+				span {
+					@apply sm:text-[9.5px] text-[15px] leading-[17px];
+					@apply md:text-[14px] md:leading-[17px] text-[15px] xl:w-[150px] md:w-[120px]  max-w-max lg:text-[12px] lg:leading-[15px]  leading-[17px];
+				}
+			}
+		}
+
+		&__info {
+			@apply flex justify-between md:w-[450px] w-full lg:w-[380px] lg:text-start text-center  lg:flex-row  flex-col-reverse;
+
+			div {
+				@apply grid;
+				@apply leading-[17px] text-[15px]  sm:leading-[17px] sm:text-[15px] my-3 lg:my-0;
+				@apply lg:leading-[16px] lg:text-[14px];
+				p {
+					@apply font-['Gilroy-bold'] font-bold mb-2;
+
+					@apply lg:leading-[12px] lg:text-[14px];
+				}
+				span {
+					@apply h-[16px] font-normal;
+					@apply lg:leading-[12px] lg:text-[14px];
+				}
+			}
+			ul:first-child {
+				@apply hidden lg:grid;
+			}
+
+			div:first-child {
+				@apply mb-2 gap-[5px];
+			}
+		}
+		.footer__auth {
+			@apply grid grid-cols-1 xl:grid-cols-2 xl:gap-[30px] h-[90px] text-center lg:text-start;
+
+			div:first-child {
+				@apply text-[14px] leading-[17px] cursor-pointer;
+				@apply md:leading-3;
+
+				p {
+					@apply mb-1 font-['Gilroy-bold'] font-bold;
+				}
+			}
+			div:last-child {
+				p {
+					@apply mb-1;
+				}
+				div {
+					@apply flex gap-[5px];
+					div {
+						@apply w-12 lg:w-11 flex;
+					}
+				}
+			}
+		}
+		.footer__social {
+			@apply grid grid-cols-1 md:grid-cols-3  gap-[8px];
+			@apply flex mt-4 lg:mt-0;
+
+			a {
+				@apply w-7 h-7;
+				@apply xl:w-12 xl:h-12;
+			}
+		}
+	}
+}
+
+.menu {
+	@apply grid xl:gap-[11.71px];
+	@apply xl:gap-[11.71px] lg:gap-[5px] gap-3;
+
+	li {
+		@apply leading-[17px] text-[15px]  sm:leading-[17px] sm:text-[15px];
+		@apply lg:text-[14px] lg:gap-[5px];
+
+		a {
+			@apply hover:text-yellow-700;
+		}
+	}
+}

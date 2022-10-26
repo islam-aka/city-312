@@ -1,0 +1,5 @@
+.layout {
+  max-width: 1625px;
+  @apply container mx-auto px-10;
+}
+/*# sourceMappingURL=Layout.module.css.map */

@@ -1,0 +1,6 @@
+.loginBtn {
+	@apply flex justify-center items-center h-[50px] w-[277px] bg-transparent rounded-[12px] border-[1px] border-[#FFE25A] sm:border-[0px] sm:h-[25px] sm:w-[10px];
+	.btnLink {
+		@apply uppercase text-[20px] font-semibold text-[#FFE25A] sm:text-[12px];
+	}
+}

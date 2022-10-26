@@ -1,0 +1,27 @@
+.registration {
+	@apply grid md:grid-cols-2  bg-primary w-full text-white h-[100vh];
+
+	&__btn {
+		@apply flex flex-col items-center justify-center;
+		h2 {
+			@apply font-['Gilroy'] font-bold text-[32px] leading-[27px] text-center mb-10;
+		}
+		div {
+			@apply grid gap-7 w-[275px];
+
+			button {
+				@apply w-full text-center px-0 py-[15px] text-black-900 text-[16px] leading-[21px] font-semibold;
+			}
+		}
+	}
+
+	&__bgImage {
+		@apply flex justify-end top-0 items-end w-full h-full  z-1;
+
+		.bgImage {
+			background: url('../app/assets/images/discount\ card\ auth.png');
+			@apply sm:w-[510px] sm:h-[490px] w-[310px] h-[310px];
+			@apply md:w-[763px] md:h-[663px]  bg-cover	bg-no-repeat;
+		}
+	}
+}

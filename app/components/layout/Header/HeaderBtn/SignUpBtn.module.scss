@@ -1,0 +1,7 @@
+.signUpBtn {
+	@apply flex justify-center items-center h-[50px] w-[277px] bg-yellow-700 rounded-[12px] sm:h-[25px] sm:w-[135px] sm:rounded-[5px];
+
+	.btnLink {
+		@apply uppercase text-[20px] font-semibold text-[#2C2C2C] sm:text-[12px];
+	}
+}
