@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react'
+import React, { FC } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { FaWhatsapp } from 'react-icons/Fa'
 import { FaTelegramPlane } from 'react-icons/Fa'
@@ -16,7 +16,7 @@ import Textarea from '@/components/ui/Textarea/Textarea'
 import styles from './partnerRegistration.module.scss'
 
 const partnerRegistration: FC = () => {
-	const [day, setDay] = useState('Понедельник')
+	// const [day, setDay] = useState('Понедельник')
 	function onChange() {
 		console.log('Captcha value:')
 	}
@@ -100,7 +100,7 @@ const partnerRegistration: FC = () => {
 					<p>Режим работы:</p>
 					<div>
 						<div className={styles.partnerRegistration__day}>
-							<DropDown state={day} setState={setDay} arr={dayDropDownMenu} />
+							<DropDown arr={dayDropDownMenu} />
 						</div>
 						<div className={styles.partnerRegistration__hour}>
 							<div>

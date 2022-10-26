@@ -7,7 +7,7 @@ export interface IDropDownDayMenu {
 }
 
 export interface IDropDown {
-	state: string
-	setState: Function
+	state?: string
+	setState?: Function
 	arr: IDropDownDayMenu
 }

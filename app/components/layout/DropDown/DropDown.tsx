@@ -8,7 +8,6 @@ const DropDown: FC<IDropDown> = ({ state, setState, arr: { items } }) => {
 	const [hidden, setHidden] = useState(false)
 	const test = (str?: string) => {
 		setHidden(!hidden)
-		setState(str)
 	}
 	return (
 		<div className={styles.dropdown}>
