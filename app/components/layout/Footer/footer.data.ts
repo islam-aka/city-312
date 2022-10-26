@@ -1,4 +1,4 @@
-import { IMenuFooter } from './footer.interface'
+import { IMenuFooter } from './footerItem.interface'
 
 export const firstMenuFooter: IMenuFooter = {
 	items: [
