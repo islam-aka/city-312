@@ -89,7 +89,9 @@ const registration: FC = () => {
 					<p>у меня есть аккаунт</p>
 				</div>
 			</div>
-			<Footer />
+			<div className={styles.footer}>
+				<Footer />
+			</div>
 		</div>
 	)
 }

@@ -9,21 +9,23 @@ import styles from './signUp.module.scss'
 
 const registration: FC = () => {
 	return (
-		<div className={styles.registration}>
+		<div>
 			<Header />
-			<div className={styles.registration__btn}>
-				<h2>РЕГИСТРАЦИЯ</h2>
-				<div>
-					<Link href="/userRegistration">
-						<Btn>я пользователь карты</Btn>
-					</Link>
-					<Link href="/partnerRegistration">
-						<Btn>я партнер</Btn>
-					</Link>
+			<div className={styles.registration}>
+				<div className={styles.registration__btn}>
+					<h2>РЕГИСТРАЦИЯ</h2>
+					<div>
+						<Link href="/userRegistration">
+							<Btn>я пользователь карты</Btn>
+						</Link>
+						<Link href="/PartnerRegistration">
+							<Btn>я партнер</Btn>
+						</Link>
+					</div>
 				</div>
-			</div>
-			<div className={styles.registration__bgImage}>
-				<div className={styles.bgImage}></div>
+				<div className={styles.registration__bgImage}>
+					<div className={styles.bgImage}></div>
+				</div>
 			</div>
 			<Footer />
 		</div>

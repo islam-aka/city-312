@@ -138,7 +138,9 @@ const PartnerRegistration: FC = () => {
 					</div>
 				</div>
 			</div>
-			<Footer />
+			<div className={styles.footer}>
+				<Footer />
+			</div>
 		</div>
 	)
 }

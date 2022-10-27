@@ -1,5 +1,5 @@
 .userRegistration {
-	@apply bg-primary w-full text-gray-300 font-['Gilroy-regular'] pb-12;
+	@apply bg-primary w-full text-gray-300 font-['Gilroy-regular'] mt-9 pt-12;
 
 	&__container {
 		@apply mx-auto pt-[30px] md:w-[408px]  lg:w-[333px] w-[290px];
@@ -43,5 +43,8 @@
 				@apply text-red-400 cursor-pointer;
 			}
 		}
+	}
+	.footer {
+		@apply mt-12;
 	}
 }
