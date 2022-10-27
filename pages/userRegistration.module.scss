@@ -15,7 +15,7 @@
 			}
 			input {
 				@apply sm:text-[14px];
-				@apply leading-[17px] text-[16px]  md:text-[18px] w-[100%] focus:outline-none;
+				@apply leading-[17px] text-[16px]  md:text-[18px] w-[100%] focus:outline-none text-black-900 placeholder:opacity-80;
 			}
 			input:first-child {
 				@apply placeholder:font-normal;

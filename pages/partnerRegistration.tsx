@@ -9,19 +9,21 @@ import { ImFacebook } from 'react-icons/im'
 
 import DropDown from '@/components/layout/DropDown/DropDown'
 import { dayDropDownMenu } from '@/components/layout/DropDown/dropDown.data'
+import Header from '@/components/layout/Header/Header'
 import Btn from '@/components/ui/Btn/Btn'
 import Input from '@/components/ui/Input/Input'
 import Textarea from '@/components/ui/Textarea/Textarea'
 
 import styles from './partnerRegistration.module.scss'
 
-const partnerRegistration: FC = () => {
-	// const [day, setDay] = useState('Понедельник')
+const partnerRegistration = () => {
+	const [day, setDay] = React.useState('Понедельник')
 	function onChange() {
 		console.log('Captcha value:')
 	}
 	return (
 		<div className={styles.partnerRegistration}>
+			<Header />
 			<h2 className="text-center mb-10 text-[28px] leading-[27px]">
 				РЕГИСТРАЦИЯ ПАРТНЕРА
 			</h2>
@@ -100,7 +102,7 @@ const partnerRegistration: FC = () => {
 					<p>Режим работы:</p>
 					<div>
 						<div className={styles.partnerRegistration__day}>
-							<DropDown arr={dayDropDownMenu} />
+							<DropDown state={day} setState={setDay} arr={dayDropDownMenu} />
 						</div>
 						<div className={styles.partnerRegistration__hour}>
 							<div>
