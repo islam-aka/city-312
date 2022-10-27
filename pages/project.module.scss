@@ -1,0 +1,35 @@
+.project {
+	@apply pt-[132px] font-['Gilroy'];
+	&__wrapper {
+		@apply w-full h-[90vh] relative flex gap-20 justify-center;
+		.project__container {
+			@apply w-[520px] relative z-2;
+			.project__block {
+				@apply grid gap-[30px];
+				h2 {
+					@apply font-bold text-[24px] leading-[29px] text-gray-800;
+				}
+				p {
+					@apply text-[18px] leading-[21px];
+				}
+			}
+			.project__btn {
+				@apply w-[508px] grid grid-cols-2 gap-[30px] mt-10;
+				button {
+					@apply px-0;
+				}
+			}
+		}
+		.project__img {
+			@apply h-[522px] bg-no-repeat w-[490px] relative z-1;
+			background: url('../app/assets/images/project-image.png');
+		}
+		.bg__block {
+			@apply w-full h-[100%] absolute top-0 z-0 flex items-end;
+			.bg__image {
+				@apply w-full h-[35%] bg-cover bg-no-repeat;
+				background: url('../app/assets/images/bg-project.png');
+			}
+		}
+	}
+}
