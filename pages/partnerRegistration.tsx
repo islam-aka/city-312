@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { AiFillInstagram } from 'react-icons/ai'
 import { AiFillYoutube } from 'react-icons/ai'
@@ -16,8 +16,8 @@ import Textarea from '@/components/ui/Textarea/Textarea'
 
 import styles from './partnerRegistration.module.scss'
 
-const partnerRegistration = () => {
-	const [day, setDay] = React.useState('Понедельник')
+const PartnerRegistration = () => {
+	const [day, setDay] = useState('Понедельник')
 	function onChange() {
 		console.log('Captcha value:')
 	}
@@ -141,4 +141,4 @@ const partnerRegistration = () => {
 	)
 }
 
-export default partnerRegistration
+export default PartnerRegistration
