@@ -86,7 +86,7 @@
 						@apply w-[240px]  text-black-900  mb-3;
 					}
 					p {
-						@apply text-red-400;
+						@apply text-red-400 cursor-pointer;
 					}
 				}
 			}
