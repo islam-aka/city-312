@@ -3,6 +3,7 @@ import ReCAPTCHA from 'react-google-recaptcha'
 import { BsCheck } from 'react-icons/bs'
 import { BsCheckLg } from 'react-icons/bs'
 
+import Footer from '@/components/layout/Footer/Footer'
 import Header from '@/components/layout/Header/Header'
 import Btn from '@/components/ui/Btn/Btn'
 import Input from '@/components/ui/Input/Input'
@@ -88,6 +89,7 @@ const registration: FC = () => {
 					<p>у меня есть аккаунт</p>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	)
 }

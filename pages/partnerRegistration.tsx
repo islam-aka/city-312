@@ -9,6 +9,7 @@ import { ImFacebook } from 'react-icons/im'
 
 import DropDown from '@/components/layout/DropDown/DropDown'
 import { dayDropDownMenu } from '@/components/layout/DropDown/dropDown.data'
+import Footer from '@/components/layout/Footer/Footer'
 import Header from '@/components/layout/Header/Header'
 import Btn from '@/components/ui/Btn/Btn'
 import Input from '@/components/ui/Input/Input'
@@ -136,6 +137,7 @@ const partnerRegistration: FC = () => {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	)
 }

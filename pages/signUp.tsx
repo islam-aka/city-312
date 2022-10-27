@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React, { FC } from 'react'
 
+import Footer from '@/components/layout/Footer/Footer'
 import Header from '@/components/layout/Header/Header'
 import Btn from '@/components/ui/Btn/Btn'
 
@@ -24,6 +25,7 @@ const registration: FC = () => {
 			<div className={styles.registration__bgImage}>
 				<div className={styles.bgImage}></div>
 			</div>
+			<Footer />
 		</div>
 	)
 }
