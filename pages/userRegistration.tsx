@@ -3,6 +3,7 @@ import ReCAPTCHA from 'react-google-recaptcha'
 import { BsCheck } from 'react-icons/bs'
 import { BsCheckLg } from 'react-icons/bs'
 
+import Header from '@/components/layout/Header/Header'
 import Btn from '@/components/ui/Btn/Btn'
 import Input from '@/components/ui/Input/Input'
 
@@ -14,6 +15,7 @@ const registration: FC = () => {
 	}
 	return (
 		<div className={styles.userRegistration}>
+			<Header />
 			<div className={styles.userRegistration__container}>
 				<h2>РЕГИСТРАЦИЯ ПОЛЬЗОВАТЕЛЯ</h2>
 				<form className={styles.userRegistration__form}>
