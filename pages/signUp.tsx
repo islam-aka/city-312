@@ -18,7 +18,7 @@ const registration: FC = () => {
 						<Link href="/userRegistration">
 							<Btn>я пользователь карты</Btn>
 						</Link>
-						<Link href="/PartnerRegistration">
+						<Link href="/partnerRegistration">
 							<Btn>я партнер</Btn>
 						</Link>
 					</div>
