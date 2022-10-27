@@ -17,7 +17,7 @@ import Textarea from '@/components/ui/Textarea/Textarea'
 
 import styles from './partnerRegistration.module.scss'
 
-const PartnerRegistration: FC = () => {
+const partnerRegistration: FC = () => {
 	const [day, setDay] = useState('Понедельник')
 	function onChange() {
 		console.log('Captcha value:')
@@ -145,4 +145,4 @@ const PartnerRegistration: FC = () => {
 	)
 }
 
-export default PartnerRegistration
+export default partnerRegistration
