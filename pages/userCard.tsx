@@ -1,13 +1,7 @@
 import React from 'react'
 
-import UserProfile from '@/components/layout/UserProfile/userProfile'
-
 const UserCard = () => {
-	return (
-		<div>
-			<UserProfile />
-		</div>
-	)
+	return <div></div>
 }
 
 export default UserCard
