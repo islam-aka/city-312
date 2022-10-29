@@ -1,9 +1,10 @@
 .project {
 	@apply pt-[132px] font-['Gilroy'];
 	&__wrapper {
-		@apply w-full h-[90vh] relative flex gap-20 justify-center;
+		@apply md:w-[1024px] lg:h-[90vh] pb-14 relative md:gap-0 md:justify-evenly;
+		@apply flex md:px-5 gap-20 w-full lg:h-[590px] h-[700px] justify-center;
 		.project__container {
-			@apply w-[520px] relative z-2;
+			@apply md:w-[460px] lg:w-[520px] w-72 relative z-2;
 			.project__block {
 				@apply grid gap-[30px];
 				h2 {
@@ -14,20 +15,22 @@
 				}
 			}
 			.project__btn {
-				@apply w-[508px] grid grid-cols-2 gap-[30px] mt-10;
+				@apply md:w-full grid lg:grid-cols-2 lg:gap-7 gap-[15px] mt-10;
 				button {
 					@apply px-0;
 				}
 			}
 		}
 		.project__img {
-			@apply h-[522px] bg-no-repeat w-[490px] relative z-1;
 			background: url('../app/assets/images/project-image.png');
+			background-size: cover !important ;
+			@apply hidden;
+			@apply md:w-[342px] md:h-[364px] md:block bg-no-repeat relative z-1;
 		}
 		.bg__block {
 			@apply w-full h-[100%] absolute top-0 z-0 flex items-end;
 			.bg__image {
-				@apply w-full h-[35%] bg-cover bg-no-repeat;
+				@apply w-full h-[70%] bg-no-repeat;
 				background: url('../app/assets/images/bg-project.png');
 			}
 		}
