@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Footer from '@/components/layout/Footer/Footer'
 import Header from '@/components/layout/Header/Header'
 import UserProfile from '@/components/layout/UsersProfile/UsersProfile'
 import Btn from '@/components/ui/Btn/Btn'
@@ -76,6 +77,7 @@ const UserCard = () => {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</>
 	)
 }
