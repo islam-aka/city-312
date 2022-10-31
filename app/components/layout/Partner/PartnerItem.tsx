@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-const partnerItem = () => {
-	return <div></div>
+import { IPartnerItem } from './partner.interface'
+
+const PartnerItem: FC<{ item: IPartnerItem }> = ({ item }) => {
+	console.log(item)
+
+	return <div>{item.name}</div>
 }
 
-export default partnerItem
+export default PartnerItem

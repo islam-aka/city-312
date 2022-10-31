@@ -1,4 +1,4 @@
-export interface IMenuItem {
+export interface IPartnerItem {
 	id: number
 	image: string
 	logo: string
@@ -6,6 +6,6 @@ export interface IMenuItem {
 	description: string
 }
 
-export interface IMenu {
-	items: IMenuItem[]
+export interface IPartner {
+	items: IPartnerItem[]
 }
