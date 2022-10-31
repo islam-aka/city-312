@@ -1,8 +1,11 @@
+import Favorites from '@/components/layout/Favorites/Favorites'
+import { IFavorites } from '@/components/layout/Favorites/favorites.interface'
+import FavoritesItem from '@/components/layout/Favorites/FavoritesItem'
 import Header from '@/components/layout/Header/Header'
 import UserProfile from '@/components/layout/UserProfile/UserProfile'
-import React from 'react'
+import React, { FC } from 'react'
 
-const favorites = () => {
+const favorites: FC <{ favorites: IFavorites }>  = ({ favorites: { items } }) => {
 
   return (
     <>
@@ -13,6 +16,13 @@ const favorites = () => {
           <UserProfile />
         </div>
         <div className='w-8/12	'>
+          <ul>
+            {
+              items.map ( item => (
+                  <FavoritesItem key={item.id} item={item} />
+              ))
+            }
+          </ul>
           favorites
         </div>
       </div>
