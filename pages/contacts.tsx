@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
+import Footer from '@/components/layout/Footer/Footer'
 import Header from '@/components/layout/Header/Header'
 import YandexMap from '@/components/layout/YandexMaps/YandexMap'
 import Btn from '@/components/ui/Btn/Btn'
@@ -26,7 +27,7 @@ const contacts = () => {
 						Оставтье заявку, мы свяжемся с вами в ближайщее время
 					</h3>
 				</div>
-				<div className="flex justify-between lg:flex-row flex-col lg:items-start items-center mt-9">
+				<div className="flex justify-around lg:flex-row flex-col lg:items-start items-center mt-9">
 					<div className={styles.form}>
 						<div>
 							<p>Ф.И.О.</p>
@@ -92,10 +93,34 @@ const contacts = () => {
 						</div>
 					</div>
 				</div>
-				<div className="w-full lg:h-[443] h-[200px] mx-auto mt-9">
-					<YandexMap />
+				<div className="mx-auto mt-10 mb-16">
+					<div className="w-full lg:h-[350px] h-[200px]">
+						<YandexMap />
+					</div>
+					<div className="mt-5 py-3 flex justify-center font-['Gilroy'] flex-wrap md:gap-28 gap-10 ">
+						<div>
+							<h3 className="font-bold text-[28px] md:mb-5 mb-3">Наш адрес</h3>
+							<p className="text-[18px] text-[#282828]">Бишкек</p>
+						</div>
+						<div>
+							<h3 className="md:mb-5 mb-3 font-semibold text-[18px]">Офис</h3>
+							<p className="text-[18px]">ул. Бишкек</p>
+							<p className="text-[18px]">+996 558 999 000</p>
+						</div>
+						<div>
+							<h3 className="md:mb-5 mb-3 font-semibold text-[18px]">Офис</h3>
+							<p className="text-[18px]">ул. Бишкек</p>
+							<p className="text-[18px]">+996 558 999 000</p>
+						</div>
+						<div>
+							<h3 className="md:mb-5 mb-3 font-semibold text-[18px]">Офис</h3>
+							<p className="text-[18px]">ул. Бишкек</p>
+							<p className="text-[18px]">+996 558 999 000</p>
+						</div>
+					</div>
 				</div>
 			</div>
+			<Footer />
 		</>
 	)
 }
