@@ -12,7 +12,7 @@ import message from '@/assets/svg/message.svg'
 import notifications from '@/assets/svg/notifications.svg'
 import usageHistory from '@/assets/svg/usageHistory.svg'
 
-import styles from './userProfile.module.scss'
+import styles from './UsersProfile.module.scss'
 
 const UserProfile: FC = () => {
 	const router = useRouter()
@@ -60,12 +60,8 @@ const UserProfile: FC = () => {
 				</Btn>
 			</div>
 			<div className={styles.userProfile__btn}>
-				<Link href="/userProfile">
-					<a
-						className={
-							router.pathname === '/userProfile' ? styles.active : styles.none
-						}
-					>
+				<Link href="/userCard">
+					<a className={styles.active}>
 						<Image
 							width={18}
 							height={18}

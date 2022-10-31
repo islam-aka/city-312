@@ -1,0 +1,19 @@
+.contacts {
+	@apply font-['Gilroy'] mt-24 max-w-[1130px] mx-auto;
+	width: calc(100% - 100px);
+	.form {
+		@apply grid gap-[30px] max-w-[300px] w-full;
+		p {
+			@apply font-medium text-[18px] leading-[21px];
+		}
+		input {
+			@apply w-full;
+			outline: none;
+			border-bottom: 1px solid black;
+		}
+		button {
+			@apply rounded-[10px] text-white w-[227px] px-0 py-[17px];
+			background: linear-gradient(0deg, #7ec9f5 0%, #3957ed 97.5%);
+		}
+	}
+}
