@@ -7,7 +7,7 @@
 			@apply font-medium text-[18px] leading-[21px];
 		}
 		input {
-			@apply w-full;
+			@apply w-full bg-none;
 			outline: none;
 			border-bottom: 1px solid black;
 		}
