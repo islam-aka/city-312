@@ -1,11 +1,11 @@
 import React from 'react'
-import { AiOutlineHeart } from 'react-icons/ai'
+
+import PartnerContainer from '@/components/layout/Partner/PartnerContainer'
 
 const partner = () => {
 	return (
 		<div>
-			partner
-			<AiOutlineHeart color="red" width={'50px'} height={'50px'} />
+			<PartnerContainer />
 		</div>
 	)
 }
