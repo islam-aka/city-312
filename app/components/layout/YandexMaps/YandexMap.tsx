@@ -13,8 +13,6 @@ const YandexMap: FC = () => {
 		<>
 			<YMaps>
 				<Map
-					width={'100%'}
-					height={'100%'}
 					defaultState={{
 						center: [42.874985, 74.602102],
 						zoom: 17,

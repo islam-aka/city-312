@@ -4,13 +4,13 @@ import styles from './Partner.module.scss'
 import PartnerItem from './PartnerItem'
 import { IPartner } from './partner.interface'
 
-const Partner: FC<{ menu: IPartner }> = ({ menu: { items } }) => {
+const Partner: FC<{ data: IPartner }> = ({ data: { items } }) => {
 	return (
-		<ul className={styles.menu}>
+		<div className={styles.partner__container}>
 			{items.map((item) => (
 				<PartnerItem item={item} key={item.id} />
 			))}
-		</ul>
+		</div>
 	)
 }
 

@@ -1,0 +1,20 @@
+.partner {
+	@apply font-['Gilroy'] max-w-[1145px] pt-20 w-full mx-auto;
+	.search {
+		@apply py-[6px] pr-[10px] my-11 lg:pl-16 pl-7 grid items-center  max-w-[1145px] w-[280px] sm:w-[95%] mx-auto bg-white;
+		@apply md:w-[98%];
+		grid-template-columns: 80% 45px;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+		border-radius: 15px;
+		@media (min-width: 768px) {
+			grid-template-columns: 95% 45px;
+		}
+		div {
+			@apply w-[45px] h-[32px] rounded-[15px] flex items-center justify-center;
+			background: linear-gradient(180deg, #ffe25a 0%, #ffa852 100%);
+		}
+		input {
+			@apply text-center outline-none text-[20px] h-[23px];
+		}
+	}
+}
