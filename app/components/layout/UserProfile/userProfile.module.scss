@@ -1,7 +1,5 @@
 .userProfile {
-	@apply py-[25px] px-[20px] text-center w-[299px] h-[467px] font-['Gilroy'] bg-[#FFFFFF] rounded-[12.5328px];
-
-	box-shadow: 0px 2.50656px 12.5328px -3.58256px rgba(0, 0, 0, 0.15);
+	@apply py-[25px] px-[20px] text-center w-[299px] h-[467px] font-['Gilroy'];
 	.userProfile__btn {
 		@apply flex flex-col font-medium;
 		a {
