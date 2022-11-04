@@ -1,4 +1,4 @@
-import { IPartner } from './partner.interface'
+import { IPartner } from './partnerCard.interface'
 
 export const partnerCard: IPartner = {
 	items: [

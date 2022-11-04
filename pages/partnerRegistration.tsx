@@ -19,9 +19,8 @@ import styles from './partnerRegistration.module.scss'
 
 const PartnerRegistration: FC = () => {
 	const [day, setDay] = useState('Понедельник')
-	function onChange() {
-		console.log('Captcha value:')
-	}
+
+	function onChange(event: any) {}
 	return (
 		<div className={styles.partnerRegistration}>
 			<Header />
@@ -40,7 +39,7 @@ const PartnerRegistration: FC = () => {
 					<div>
 						<p>Организационная правовая форма </p>
 						<div className="flex justify-between bg-white rounded-[10px]  font-bold items-center px-[12px] lg:py-[10px] py-[5px]">
-							<Input type="text" placeholder="Правовая форма " />
+							<Input type="text" placeholder="Правовая форма" />
 							<BsCheck color="#F5C521" size={'18px'} />
 						</div>
 					</div>

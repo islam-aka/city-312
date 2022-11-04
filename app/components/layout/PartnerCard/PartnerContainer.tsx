@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
-import Partner from './Partner'
-import { partnerCard } from './partner.data'
+import Partner from './PartnerCard'
+import { partnerCard } from './partnerCard.data'
 
 const PartnerContainer: FC = () => {
 	return <Partner data={partnerCard} />

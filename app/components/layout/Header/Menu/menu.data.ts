@@ -16,7 +16,7 @@ export const firstMenu: IMenu = {
 		},
 		{
 			title: 'Партнерам',
-			link: '/partner',
+			link: '/partnerCard',
 		},
 		{
 			title: 'Контакты',
