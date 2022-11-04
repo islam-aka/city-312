@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React, { FC } from 'react'
 import { AiOutlineHeart } from 'react-icons/ai'
 import { AiFillHeart } from 'react-icons/ai'
@@ -8,7 +9,7 @@ import Btn from '@/components/ui/Btn/Btn'
 import share from '@/assets/svg/share.svg'
 
 import styles from './PartnerItem.module.scss'
-import { IPartnerItem } from './partner.interface'
+import { IPartnerItem } from './Stocks.interface'
 
 const PartnerItem: FC<{ item: IPartnerItem }> = ({ item }) => {
 	const [favourite, setFavourites] = React.useState(false)
@@ -16,14 +17,27 @@ const PartnerItem: FC<{ item: IPartnerItem }> = ({ item }) => {
 	return (
 		<div className={styles.partnerItem}>
 			<div className="mt-1 relative">
-				<div className="rounded-[12px]">
-					<img width={'100%'} height={210} alt="City-312" src={item.image} />
-				</div>
-				<img
-					className="w-[81px] h-[81px] absolute lg:top-[145px] top-[100px] left-[35%] rounded-[50%] "
-					alt={item.name}
-					src={item.logo}
-				/>
+				<Link href={`/partner/${item.id}`}>
+					<div className="rounded-[12px] cursor-pointer">
+						<div
+							style={{
+								background: `url(${item.image})`,
+								backgroundRepeat: 'no-repeat',
+								backgroundSize: ' cover',
+								width: '100%',
+								height: '210px',
+							}}
+						></div>
+					</div>
+				</Link>
+				<div
+					className="w-[81px] h-[81px] absolute lg:top-[145px] top-[100px] left-[35%] rounded-[50%]"
+					style={{
+						background: `url(${item.logo})`,
+						backgroundRepeat: 'no-repeat',
+						backgroundSize: ' cover',
+					}}
+				></div>
 				<div className={styles.heart} onClick={() => setFavourites(!favourite)}>
 					{favourite ? (
 						<AiFillHeart color="red" />

@@ -1,8 +1,8 @@
 import { FC } from 'react'
 
-import styles from './Partner.module.scss'
-import PartnerItem from './PartnerItem'
-import { IPartner } from './partner.interface'
+import styles from './PartnerCard.module.scss'
+import PartnerItem from './PartnerCardItem'
+import { IPartner } from './partnerCard.interface'
 
 const Partner: FC<{ data: IPartner }> = ({ data: { items } }) => {
 	return (
