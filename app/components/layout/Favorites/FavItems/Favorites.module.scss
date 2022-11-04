@@ -1,25 +1,28 @@
 .favorites {
-  @apply max-w-full pt-28 m-auto;
+  @apply max-w-full pt-28;
   &_flex {
-    @apply block w-[370x] m-auto;
+    @apply block w-[370x] ;
     @apply xl:w-[1230px];
     @apply sm:flex justify-evenly;
+    .userProfile {
+      @apply w-[300px] m-auto sm:m-0;
+    }
     &__favBlock {
-      @apply w-[320x] sm:w-[450x] m-auto pt-[20px];
+      @apply w-[320px] sm:w-[450x] pt-[20px] m-auto;
       @apply xl:w-[900px];
       &_title {
         @apply flex items-center pb-[20px];
         div {
-          @apply border border-solid border-[red] rounded-2xl p-1 ;
+          @apply border border-solid border-[red] rounded-2xl p-1;
         }
         h2 {
           @apply font-medium text-[24px];
         }
       }
       .favoriteItems {
-        @apply grid gap-x-5 grid-cols-1 w-[300px] m-auto;
+        @apply grid gap-x-5 grid-cols-1 w-[300px];
         @apply sm:w-[275px];
-        @apply md:grid md:gap-x-5 md:grid-cols-2 lg:w-[620px];
+        @apply md:grid md:gap-x-5 md:grid-cols-2 lg:w-[300px];
       }
     }
   }

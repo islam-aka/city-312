@@ -14,7 +14,9 @@ const Favorites: FC <{ data: IFavorites }> = ({ data: { items } }) => {
     <Header />
     <div className={styles.favorites}>
       <div className={styles.favorites_flex}>
-        <UserProfile />
+        <div className={styles.userProfile}>
+          <UserProfile />
+        </div>
         <div className={styles.favorites_flex__favBlock}>
           <div className={styles.favorites_flex__favBlock_title}>
             <div className={styles.icon}>
