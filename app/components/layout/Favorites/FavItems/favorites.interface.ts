@@ -1,3 +1,5 @@
+import { IPartnerPage } from "../../PartnerPages/partnerPages.interface"
+
 export interface IFavoritesItem {
     id: string
     image: string
@@ -9,7 +11,7 @@ export interface IFavoritesItem {
     price: number
     count: number
     discount: string
-    partner: string
+    partner: IPartnerPage
 }
 
 export interface IFavorites {

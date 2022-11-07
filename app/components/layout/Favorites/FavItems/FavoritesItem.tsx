@@ -2,6 +2,7 @@ import React, { FC } from 'react'
 import { IFavoritesItem } from './favorites.interface'
 import styles from './FavoritesItem.module.scss'
 import { AiOutlineHeart } from 'react-icons/ai'
+import Link from 'next/link'
 
 const FavoritesItem: FC <{item: IFavoritesItem}> = ({ item }) => {
   return (
@@ -20,7 +21,9 @@ const FavoritesItem: FC <{item: IFavoritesItem}> = ({ item }) => {
           </div>
         <p  className={styles.favorite__Card_top_bottom}>{item.discount}</p>
         </div>
+        <Link href={`/partner/${item.partner.id}`}>
           <img src={item.image} alt={item.title} />
+        </Link>
         <div className={styles.favorite__Card_desc}>
           <div className={styles.favorite__Card_desc_flex}>
             <h3>{item.title}</h3>
