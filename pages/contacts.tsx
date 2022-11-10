@@ -1,10 +1,11 @@
+import { useJsApiLoader } from '@react-google-maps/api'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 import Footer from '@/components/layout/Footer/Footer'
 import Header from '@/components/layout/Header/Header'
-import YandexMap from '@/components/layout/YandexMaps/YandexMap'
+import Map from '@/components/layout/Map/Map'
 import Btn from '@/components/ui/Btn/Btn'
 import Input from '@/components/ui/Input/Input'
 
@@ -14,7 +15,27 @@ import whatsapp from '@/assets/svg/icon whatsapp.svg'
 
 import styles from './contacts.module.scss'
 
+const defaultCenter = {
+	lat: 42.87,
+	lng: 74.59,
+}
+
+type Libraries = (
+	| 'drawing'
+	| 'geometry'
+	| 'localContext'
+	| 'places'
+	| 'visualization'
+)[]
+
+const libraries: Libraries = ['places']
+
 const contacts = () => {
+	const { isLoaded } = useJsApiLoader({
+		id: 'google-map-script',
+		googleMapsApiKey: 'AIzaSyBCKfxyxhPafyv0-c5x_kxO24aNijt0b6U',
+		libraries,
+	})
 	return (
 		<>
 			<Header />
@@ -24,7 +45,7 @@ const contacts = () => {
 						Остались вопросы
 					</h2>
 					<h3 className="font-medium text-[18px] leading-[21px] text-center">
-						Оставтье заявку, мы свяжемся с вами в ближайщее время
+						Оставьте заявку, мы свяжемся с вами в ближайщее время
 					</h3>
 				</div>
 				<div className="flex justify-around lg:flex-row flex-col lg:items-start items-center mt-9">
@@ -95,7 +116,7 @@ const contacts = () => {
 				</div>
 				<div className="mx-auto mt-10 mb-16">
 					<div className="w-full lg:h-[350px] h-[200px]">
-						<YandexMap />
+						{isLoaded ? <Map center={defaultCenter} /> : <h2>loading</h2>}
 					</div>
 					<div className="mt-5 py-3 flex justify-center font-['Gilroy'] flex-wrap md:gap-28 gap-10 ">
 						<div>

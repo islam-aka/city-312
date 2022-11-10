@@ -29,6 +29,11 @@
 			"@/assets/*": ["assets/*"]
 		}
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"app/components/layout/Map/Theme.js"
+	],
 	"exclude": ["node_modules"]
 }

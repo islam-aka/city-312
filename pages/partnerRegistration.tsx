@@ -29,6 +29,22 @@ const PartnerRegistration: FC = () => {
 			</h2>
 			<div className={styles.partnerRegistration__container}>
 				<div className={styles.partnerRegistration__info}>
+					<div className={styles.partnerRegistration__image}>
+						<div className={styles.partnerRegistration__logo}>
+							<div className="bg-white w-[136px] h-[130px] rounded-[27px]  text-primary cursor-pointer">
+								Логотип
+							</div>
+							<div className="w-[130px]">
+								<input type="file" name="ava" onChange={(e) => onChange(e)} />
+							</div>
+						</div>
+
+						<div className={styles.partnerRegistration__bg}>
+							<div className="w-[136px] h-[130px] rounded-[27px] cursor-pointer bg-white flex justify-center items-center text-primary">
+								Вставить фото шапки
+							</div>
+						</div>
+					</div>
 					<div>
 						<p>Наименование (брендовое название )</p>
 						<div className="flex justify-between bg-white rounded-[10px]  font-bold items-center px-[12px] lg:py-[10px] py-[5px]">

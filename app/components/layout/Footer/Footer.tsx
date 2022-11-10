@@ -40,13 +40,12 @@ const Footer: FC = () => {
 						<Link href={'/auth'}>
 							<p>вход</p>
 						</Link>
-						<Link href={'/auth'}>
+						<Link href={'/signUp'}>
 							<p>регистрация</p>
 						</Link>
 					</div>
 					<div>
 						<p>Pay partner</p>
-
 						<div>
 							<div>
 								<Image src={envelope} alt="City-312" draggable={false} />
