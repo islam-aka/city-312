@@ -1,15 +1,22 @@
-.partnerItem {
-	@apply lg:w-[346px] w-[280px] py-4 px-5 bg-white rounded-[17.0208px] my-6;
-	border: 1.70208px solid #ffffff;
-	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-	.heart {
-		@apply flex items-center justify-center bg-white w-9 h-9 rounded-[25px] absolute lg:top-[185px] top-[135px] left-[85%] cursor-pointer;
-		border: 0.851038px solid #eaeaea;
-		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-	}
-	.share {
-		@apply flex justify-center items-center w-[36px] h-[36px] rounded-[20px] mr-3;
-		border: 0.851038px solid #eaeaea;
-		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+.stocksItem {
+	@apply max-w-[387px] w-full my-4 rounded-[20px] pb-2;
+	box-shadow: 4px 4px 31px -10px rgba(34, 60, 80, 0.2);
+
+	.item__bg {
+		@apply rounded-t-[20px] pt-[10px] flex justify-between relative;
+
+		.item__partner {
+			@apply bg-white max-w-[170px] h-[35px] w-full overflow-hidden rounded-2xl p-[2px] flex gap-[10px] ml-[10px];
+		}
+		.heart {
+			@apply flex items-center justify-center bg-white w-9 h-9 rounded-[25px] absolute right-2 cursor-pointer;
+			border: 0.851038px solid #eaeaea;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+		}
+		.share {
+			@apply flex justify-center items-center w-[36px] h-[36px] rounded-[20px] mr-3;
+			border: 0.851038px solid #eaeaea;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+		}
 	}
 }

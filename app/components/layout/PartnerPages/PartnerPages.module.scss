@@ -1,0 +1,6 @@
+.partnerPages {
+	@apply font-['Gilroy'];
+	&__sliders {
+		@apply grid gap-5 max-w-[1130px] mx-auto grid-cols-3 font-['Gilroy'];
+	}
+}

@@ -1,12 +1,12 @@
 import { FC } from 'react'
 
-import styles from './PartnerCard.module.scss'
-import { IPartner } from './Stocks.interface'
+import styles from './Stocks.module.scss'
+import { IStocks } from './Stocks.interface'
 import StocksItem from './StocksItem'
 
-const Stocks: FC<{ data: IPartner }> = ({ data: { items } }) => {
+const Stocks: FC<{ data: IStocks }> = ({ data: { items } }) => {
 	return (
-		<div className={styles.partner__container}>
+		<div className={styles.stocks__container}>
 			{items.map((item) => (
 				<StocksItem item={item} key={item.id} />
 			))}

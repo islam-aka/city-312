@@ -6,7 +6,7 @@ import Btn from '@/components/ui/Btn/Btn'
 
 import styles from './project.module.scss'
 
-const project: FC = () => {
+const Project: FC = () => {
 	return (
 		<div className={styles.project}>
 			<Header />
@@ -46,4 +46,4 @@ const project: FC = () => {
 	)
 }
 
-export default project
+export default Project

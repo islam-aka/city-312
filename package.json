@@ -25,6 +25,7 @@
 		"react-google-recaptcha": "^2.1.0",
 		"react-icons": "^4.6.0",
 		"sass": "^1.55.0",
+		"swiper": "^8.4.4",
 		"use-places-autocomplete": "^4.0.0"
 	},
 	"devDependencies": {

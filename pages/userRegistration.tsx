@@ -10,7 +10,7 @@ import Input from '@/components/ui/Input/Input'
 
 import styles from './userRegistration.module.scss'
 
-const registration: FC = () => {
+const UserRegistration: FC = () => {
 	function onChange(input: any) {}
 	return (
 		<div className={styles.userRegistration}>
@@ -100,4 +100,4 @@ const registration: FC = () => {
 	)
 }
 
-export default registration
+export default UserRegistration

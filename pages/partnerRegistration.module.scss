@@ -1,10 +1,10 @@
 .partnerRegistration {
 	@apply bg-primary w-full text-gray-300 pt-10;
 	&__container {
-		@apply flex justify-between xl:flex-row flex-col gap-[40px] xl:max-w-[1200px] w-[310px] xl:w-full mx-auto;
+		@apply flex justify-between xl:flex-row flex-col gap-[40px] xl:max-w-[1130px] w-[310px] xl:w-full mx-auto;
 
 		.partnerRegistration__info {
-			@apply grid gap-4 h-[725px] font-['Gilroy'];
+			@apply grid gap-4  font-['Gilroy'];
 
 			.partnerRegistration__image {
 				@apply lg:text-[18px] text-[12px]  leading-[19px];

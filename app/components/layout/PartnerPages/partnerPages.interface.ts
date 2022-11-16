@@ -23,4 +23,5 @@ export interface IPartnerPage {
 	contacts: string
 	rating: number
 	location: IlocationItem
+	address: string
 }

@@ -9,7 +9,7 @@ import Input from '@/components/ui/Input/Input'
 
 import styles from './partnerCard.module.scss'
 
-const partner = () => {
+const PartnerCard = () => {
 	return (
 		<>
 			<Header />
@@ -34,4 +34,4 @@ const partner = () => {
 	)
 }
 
-export default partner
+export default PartnerCard

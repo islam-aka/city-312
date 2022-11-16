@@ -1,8 +1,7 @@
-import { GoogleMap } from '@react-google-maps/api'
+import { GoogleMap, Marker } from '@react-google-maps/api'
 import React, { FC, useRef } from 'react'
 
 import styles from './Map.module.scss'
-import { defaultTheme } from './Theme'
 import { Icoordinates } from './map.interface'
 
 const containerStyle = {
@@ -42,13 +41,12 @@ const Map: FC<Icoordinates> = ({ center }) => {
 			<GoogleMap
 				mapContainerStyle={containerStyle}
 				center={center}
-				zoom={10}
+				zoom={17}
 				onLoad={onLoad}
 				onUnmount={onUnmount}
 				options={defaultOptions}
 			>
-				{/* Child components, such as markers, info windows, etc. */}
-				<></>
+				<Marker position={center} />
 			</GoogleMap>
 		</div>
 	)

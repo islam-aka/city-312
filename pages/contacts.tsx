@@ -30,7 +30,7 @@ type Libraries = (
 
 const libraries: Libraries = ['places']
 
-const contacts = () => {
+const Contacts = () => {
 	const { isLoaded } = useJsApiLoader({
 		id: 'google-map-script',
 		googleMapsApiKey: 'AIzaSyBCKfxyxhPafyv0-c5x_kxO24aNijt0b6U',
@@ -146,4 +146,4 @@ const contacts = () => {
 	)
 }
 
-export default contacts
+export default Contacts
