@@ -1,0 +1,121 @@
+.favoritePage {
+  @apply w-[390px] m-auto pt-[100px];
+  @apply sm:w-[640px] ;
+  @apply lg:w-[768px];
+  @apply md:w-[1024px];
+  .container {
+    @apply w-[330px] m-auto;
+    @apply sm:w-[600px];
+    @apply md:w-[950px];
+    .favoritePage__flex {
+      @apply block ;
+      @apply md:flex md:justify-between;
+      &_left{
+        img {
+          @apply w-[330px] h-[350px] m-auto;
+          @apply sm:w-[568px] sm:h-[300px] ;
+          @apply lg:w-[645px] lg:h-[350px];
+          @apply lg:w-[535px] lg:h-[350px];
+        }
+        .left_title {
+          @apply  hidden ;
+          @apply  xl:block ;
+          h1{
+            @apply text-[26px] font-[700];
+          }
+          span{
+            @apply text-[#B6B6B6];
+          }
+        }
+      }
+      &_right{
+        @apply w-[330px] pt-[25px] pb-[12px] m-auto;
+        @apply sm:flex sm:justify-between sm:w-[560px];
+        @apply sm:w-[600px];
+        @apply md:w-[300px] md:block;
+        button {
+          @apply w-[330px] my-[20px];
+          @apply sm:w-[217px];
+          @apply  lg:w-[250px];
+          @apply  md:w-[192px];
+        }
+        p{
+          @apply text-[14px] text-[#797C88] ;
+        }
+        .right_price {
+          @apply flex justify-between w-[250px] ;
+          @apply sm:w-[217px] ;
+          @apply lg:w-[247px] ;
+          @apply md:w-[192px] ;
+          del {
+            @apply text-[#797C88] text-[18px];
+          }
+          p{
+            @apply text-[18px];
+          }
+        } 
+        .right_social {
+          @apply my-[32px] ;
+        }
+        .right_socialLinks{
+          @apply flex m-auto w-[330px] ;
+          @apply sm:w-[230px] ;
+          @apply  m-0;
+          span {
+            @apply px-[13px] py-[2px] mr-[10px] mt-[10px] border rounded-sm;
+            img {
+              // @apply w-[11px] ;
+            }
+          }
+        }
+      }      
+    }
+  }
+  &__description {
+    @apply sm:w-[560px] md:w-[900px] ;
+    @apply md:w-[900px] ;
+    &_title {
+      @apply text-[14px] text-[#4D5060] ;
+      @apply sm:text-[16px] ;
+      @apply sm:text-[16px] md:w-[560px] md:ml-[50px];
+    }
+    &_address {
+      @apply my-[32px] ;
+    }
+    &_review {
+      h2 {
+        @apply text-[16px] font-medium py-[17px];
+      }
+      .review_flex {
+        @apply md:flex;
+        .reviewBlock {
+          @apply border rounded-md;
+          @apply md:w-[895px];
+        }
+        .reviewCard {
+          @apply flex items-center w-[320px]  py-[15px] px-[20px];
+          img {
+            @apply pr-[15px];
+          }
+          p{
+            @apply text-[14px] font-medium;
+          }
+        }
+      }
+      .reviewButton {
+        @apply py-[30px] w-[315px] m-auto block sm:flex md:block;
+        @apply md:block md:ml-[70px] ;
+        &_question {
+          @apply py-[20px] w-[315px] m-auto text-[#fff] bg-[#0077FF] border rounded-md;
+          @apply sm:py-[10px] sm:w-[155px] ;
+          @apply md:w-[232px];
+        }
+        &_review {
+          @apply mt-[14px] py-[20px] w-[315px] m-auto text-[#000] border rounded-md text-center;
+          @apply sm:py-[10px] sm:w-[155px] sm:mt-[0] sm:ml-[15px];
+          @apply md:ml-[0px] md:mt-[20px] md:w-[232px];
+        }
+      }
+    }
+  }
+}

@@ -21,7 +21,7 @@ const FavoritesItem: FC <{item: IFavoritesItem}> = ({ item }) => {
           </div>
         <p  className={styles.favorite__Card_top_bottom}>{item.discount}</p>
         </div>
-        <Link href={`/favorites/${item.partner.id}`}>
+        <Link href={`/${item.partner.id}`}>
           <img src={item.image} alt={item.title} />
         </Link>
         <div className={styles.favorite__Card_desc}>

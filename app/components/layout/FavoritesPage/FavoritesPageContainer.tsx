@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
-import FavoritesPage from './FavoritesPage'
-import { favoritesPage } from './FavoritesPage.data'
+import FavoritesPage from './FavoritesPageElement/FavoritesPage'
+import { favoritesPage } from './FavoritesPageElement/FavoritesPage.data'
 
 const FavoritesPageContainer: FC = () => {
   return (

@@ -1,6 +1,6 @@
 export interface IFeedbackItem {
 	id: number
-	image: string
+	imageFB: string
 	name: string
 	second_name: string
 	description: string
@@ -12,11 +12,12 @@ export interface IFeedback {
 
 export interface IFavoritesPage {
 	id: number
-	image: string
+	images: string
 	logo: string
 	name: string
 	category: string
 	price: number
+	discountEnd: string
 	description: {
 		condition: string
 		paragraf: string[]
