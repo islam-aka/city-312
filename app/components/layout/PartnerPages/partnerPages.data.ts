@@ -11,16 +11,9 @@ export const partnerPage: IPartnerPage = {
 	contacts:
 		'{"number4":"+996 555 555 554","number1":"+996 555 555 551","number2":"+996 555 555 552","number3":"+996 555 555 553"}',
 	rating: 4.65,
-	feedback: {
-		feedbackItem: [
-			{
-				id: 1,
-				image: 'https://i.ibb.co/nCGjvfk/Ellipse-3021.png',
-				name: 'Ирина',
-				second_name: 'Мирная',
-				description:
-					'крутой ролик  мне понравилось надеюсь следующий выйдет скоро',
-			},
-		],
+	location: {
+		lat: 42.8749873,
+		lng: 74.60200979999999,
 	},
+	address: 'г. Бишкек, ул. Киевская 77, вход со стороны Киевской ',
 }

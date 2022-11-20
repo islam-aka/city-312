@@ -4,7 +4,7 @@ import PartnerPages from './PartnerPages'
 import { partnerPage } from './partnerPages.data'
 
 const PartnerContainer: FC = () => {
-	return <PartnerPages data={partnerPage} />
+	return <PartnerPages partner={partnerPage} />
 }
 
 export default PartnerContainer

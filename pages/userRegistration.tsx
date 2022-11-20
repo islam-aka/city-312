@@ -10,16 +10,20 @@ import Input from '@/components/ui/Input/Input'
 
 import styles from './userRegistration.module.scss'
 
-const registration: FC = () => {
-	function onChange() {
-		console.log('Captcha value:')
-	}
+const UserRegistration: FC = () => {
+	function onChange(input: any) {}
 	return (
 		<div className={styles.userRegistration}>
 			<Header />
 			<div className={styles.userRegistration__container}>
 				<h2>РЕГИСТРАЦИЯ ПОЛЬЗОВАТЕЛЯ</h2>
 				<form className={styles.userRegistration__form}>
+					<div className={styles.userRegistration__ava}>
+						<div className="w-[136px] h-[130px] rounded-[27px] bg-gray-600 flex justify-center items-center text-primary">
+							image
+						</div>
+						<input type="file" name="ava" onChange={(e) => onChange(e)} />
+					</div>
 					<div>
 						<p>Почта</p>
 						<div className="flex bg-white rounded-[10px]  font-bold items-center px-[12px] py-[10px]">
@@ -96,4 +100,4 @@ const registration: FC = () => {
 	)
 }
 
-export default registration
+export default UserRegistration

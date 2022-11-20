@@ -7,7 +7,7 @@ import Btn from '@/components/ui/Btn/Btn'
 
 import styles from './signUp.module.scss'
 
-const registration: FC = () => {
+const SignUp: FC = () => {
 	return (
 		<div>
 			<Header />
@@ -32,4 +32,4 @@ const registration: FC = () => {
 	)
 }
 
-export default registration
+export default SignUp

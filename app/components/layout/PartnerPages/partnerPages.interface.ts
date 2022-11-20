@@ -5,7 +5,10 @@ export interface IFeedbackItem {
 	second_name: string
 	description: string
 }
-
+export interface IlocationItem {
+	lat: number
+	lng: number
+}
 export interface IFeedback {
 	feedbackItem: IFeedbackItem[]
 }
@@ -19,5 +22,6 @@ export interface IPartnerPage {
 	description: string
 	contacts: string
 	rating: number
-	feedback: IFeedback
+	location: IlocationItem
+	address: string
 }

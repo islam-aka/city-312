@@ -1,0 +1,19 @@
+.menuDesc {
+  @apply flex ;
+  a {
+    @apply mr-[16px];
+  }
+  &__detail{
+    p {
+      @apply mr-[16px];
+    }
+  }
+}
+
+.active {
+  @apply font-[500];
+}
+.inactive {
+  @apply font-[200];
+
+}

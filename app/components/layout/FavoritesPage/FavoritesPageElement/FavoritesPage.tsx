@@ -3,6 +3,8 @@ import React, { FC } from 'react';
 //components
 import Btn from '@/components/ui/Btn/Btn';
 import FPageSlder from './slider/FPageSlider';
+import Map from '../../Map/Map'
+import { useJsApiLoader } from '@react-google-maps/api'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -12,12 +14,31 @@ import 'swiper/css';
 
 // interfaces
 import { IFavoritesPage } from './FavoritesPage.interface';
+import {menuData} from './Menudesc.data'
 
 // styles
 import styles from './FavoritesPage.module.scss';
 import Footer from '../../Footer/Footer';
+import Menudesc from './menuDesc/Menudesc';
+import StocksSliders from '../../Stocks/StocksSliders';
+import { stocksCard } from '../../Stocks/stocks.data';
 
+type Libraries = (
+  | 'drawing'
+  | 'geometry'
+  | 'localContext'
+  | 'places'
+  | 'visualization'
+)[]
+
+const libraries: Libraries = ['places']
 const FavoritesPage: FC <{data: IFavoritesPage}>= ({data}) => {
+  
+  const { isLoaded } = useJsApiLoader({
+		id: 'google-map-script',
+		googleMapsApiKey: 'AIzaSyBCKfxyxhPafyv0-c5x_kxO24aNijt0b6U',
+		libraries,
+	})
 
   const socialmedia = [
     'https://i.ibb.co/SnFDZk4/Iconinst.png',
@@ -35,7 +56,7 @@ const FavoritesPage: FC <{data: IFavoritesPage}>= ({data}) => {
             <span>{data.address}</span>
           </div>
           {/* <FPageSlder image={data.images} /> */}
-          <img src={data.images[0]} alt="" />
+          <img src={data.images} alt="" />
         </div>
         <div className={styles.favoritePage__flex_right}>
           <div>
@@ -63,20 +84,21 @@ const FavoritesPage: FC <{data: IFavoritesPage}>= ({data}) => {
       <div className={styles.favoritePage__description}>
         
         <div className={styles.favoritePage__description_title}>
-          {data.description.paragraf.map((item, index) => {
-            return (
-              <p key={index}>{item}</p>
-              )
-            })}
+          <Menudesc menuData={menuData} />
+          {/* <Menudesc  /> */}
+          {/* <p>{data.descript}</p> */}
         </div>
         <div className={styles.favoritePage__description_address}>
           <p>Адрес</p>
           <p>{data.address}</p>
+          <div className="w-full h-[443px]" id='address'>
+						{isLoaded ? <Map center={data.location} /> : <h2>loading</h2>}
+					</div>
         </div>
         <div className={styles.favoritePage__description_review}>
           <h2>Отзывы об услуге</h2>
           <div className={styles.review_flex}>
-          <div className={styles.reviewBlock}>
+          <div className={styles.reviewBlock} id='review'>
             {data.feedback.feedbackItem.map((item, index) => {
               return(
                 <div key={index} className={styles.reviewCard}>
@@ -102,17 +124,7 @@ const FavoritesPage: FC <{data: IFavoritesPage}>= ({data}) => {
         <div className={styles.favoritePage__description_mustLike}>
           <h2>Вам может понравиться</h2>
           <div className={styles.mustLike_cards}>
-            <Swiper
-              spaceBetween={50}
-              slidesPerView={3}
-              onSlideChange={() => console.log('slide change')}
-              onSwiper={(swiper) => console.log(swiper)}
-            >
-              <SwiperSlide>Slide 1</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
-              <SwiperSlide>Slide 4</SwiperSlide>
-            </Swiper>
+            <StocksSliders data={stocksCard} />
           </div>
         </div>
       </div>

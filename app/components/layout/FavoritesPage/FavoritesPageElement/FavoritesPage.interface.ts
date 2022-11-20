@@ -10,6 +10,11 @@ export interface IFeedback {
 	feedbackItem: IFeedbackItem[]
 }
 
+export interface IlocationItem {
+	lat: number
+	lng: number
+}
+
 export interface IFavoritesPage {
 	id: number
 	images: string
@@ -18,12 +23,10 @@ export interface IFavoritesPage {
 	category: string
 	price: number
 	discountEnd: string
-	description: {
-		condition: string
-		paragraf: string[]
-	}
+	descript:  string
 	contacts: string
 	rating: number
+	location: IlocationItem
     address: string
 	feedback: IFeedback
 }

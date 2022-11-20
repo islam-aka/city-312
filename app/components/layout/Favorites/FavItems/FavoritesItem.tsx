@@ -21,9 +21,9 @@ const FavoritesItem: FC <{item: IFavoritesItem}> = ({ item }) => {
           </div>
         <p  className={styles.favorite__Card_top_bottom}>{item.discount}</p>
         </div>
-        <Link href={`/${item.partner.id}`}>
+        <Link href={`/productPage/${item.partnerId}`}>
+          <a>
           <img src={item.image} alt={item.title} />
-        </Link>
         <div className={styles.favorite__Card_desc}>
           <div className={styles.favorite__Card_desc_flex}>
             <h3>{item.title}</h3>
@@ -35,6 +35,8 @@ const FavoritesItem: FC <{item: IFavoritesItem}> = ({ item }) => {
             <p>{item.price} сом</p>
           </div>
         </div>
+        </a>
+        </Link>
       </div>
     </div>
   )

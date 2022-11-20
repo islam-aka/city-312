@@ -1,10 +1,27 @@
 .partnerRegistration {
 	@apply bg-primary w-full text-gray-300 pt-10;
 	&__container {
-		@apply flex justify-between xl:flex-row flex-col gap-[40px] xl:max-w-[1200px] w-[310px] xl:w-full mx-auto;
+		@apply flex justify-between xl:flex-row flex-col gap-[40px] xl:max-w-[1130px] w-[310px] xl:w-full mx-auto;
 
 		.partnerRegistration__info {
-			@apply grid gap-4 h-[466px];
+			@apply grid gap-4  font-['Gilroy'];
+
+			.partnerRegistration__image {
+				@apply lg:text-[18px] text-[12px]  leading-[19px];
+				.partnerRegistration__logo {
+					@apply flex items-center justify-between mb-4;
+					div {
+						@apply w-[134px] flex justify-center items-center;
+					}
+
+					input {
+						@apply w-[134px] text-white bg-transparent cursor-pointer;
+						background: none;
+					}
+				}
+				.partnerRegistration__bg {
+				}
+			}
 			div {
 				@apply xl:w-full w-[310px];
 			}
