@@ -4,12 +4,13 @@ import React from 'react'
 import styles from './StocksPages.module.scss'
 
 const StocksPages = () => {
-  return (
-    <div className={styles.stocksPages}>
-
-      <div><Stocks data={stocksCard }/></div>
-    </div>
-  )
+	return (
+		<div className={styles.stocksPages}>
+			<div>
+				<Stocks data={stocksCard} />
+			</div>
+		</div>
+	)
 }
 
 export default StocksPages

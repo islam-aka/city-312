@@ -2,7 +2,7 @@ import React from 'react'
 
 import Footer from '@/components/layout/Footer/Footer'
 import Header from '@/components/layout/Header/Header'
-import UserProfile from '@/components/layout/UsersProfile/UsersProfile'
+import UserProfile from '@/components/layout/UserProfile/UserProfile'
 import Btn from '@/components/ui/Btn/Btn'
 
 import styles from './userCard.module.scss'

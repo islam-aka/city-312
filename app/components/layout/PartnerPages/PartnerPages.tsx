@@ -30,6 +30,7 @@ const PartnerPages: FC<{ partner: IPartnerPage }> = ({ partner }) => {
 		googleMapsApiKey: 'AIzaSyBCKfxyxhPafyv0-c5x_kxO24aNijt0b6U',
 		libraries,
 	})
+
 	let contact = JSON.parse(partner.contacts)
 
 	return (
