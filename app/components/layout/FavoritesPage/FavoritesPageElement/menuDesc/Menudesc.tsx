@@ -16,7 +16,7 @@ const Menudesc: FC <{menuData: IMenu}>= (menuData) => {
   
   const [active, setActive] = useState<AO>({
     activeObject: {id:1},
-    objects: [{id: 1},{id: 2},{id: 3}]
+    objects: menuData.menuData.items
   });
   const [text, setText] = useState('text');
 
@@ -62,7 +62,3 @@ const Menudesc: FC <{menuData: IMenu}>= (menuData) => {
 }
 
 export default Menudesc
-
-{/* <div onClick={() => setActive(false) }>Прочие условия:</div>
-:
-<div onClick={() => setActive(true) }>321</div> */}

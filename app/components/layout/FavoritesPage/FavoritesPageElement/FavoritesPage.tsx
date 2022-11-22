@@ -88,17 +88,17 @@ const FavoritesPage: FC <{data: IFavoritesPage}>= ({data}) => {
           {/* <Menudesc  /> */}
           {/* <p>{data.descript}</p> */}
         </div>
-        <div className={styles.favoritePage__description_address}>
+        <div className={styles.favoritePage__description_address}  id='address'>
           <p>Адрес</p>
           <p>{data.address}</p>
-          <div className="w-full h-[443px]" id='address'>
+          <div className="w-full h-[443px]">
 						{isLoaded ? <Map center={data.location} /> : <h2>loading</h2>}
 					</div>
         </div>
-        <div className={styles.favoritePage__description_review}>
+        <div className={styles.favoritePage__description_review}  id='review'>
           <h2>Отзывы об услуге</h2>
           <div className={styles.review_flex}>
-          <div className={styles.reviewBlock} id='review'>
+          <div className={styles.reviewBlock}>
             {data.feedback.feedbackItem.map((item, index) => {
               return(
                 <div key={index} className={styles.reviewCard}>
