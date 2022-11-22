@@ -19,7 +19,7 @@ const StocksSliders: FC<{ data: IStocks }> = ({ data: { items } }) => {
 				className={styles.swiperWrapper}
 			>
 				{items.map((item) => (
-					<SwiperSlide>
+					<SwiperSlide key={item.id}>
 						<StocksItem item={item} key={item.id} />
 					</SwiperSlide>
 				))}

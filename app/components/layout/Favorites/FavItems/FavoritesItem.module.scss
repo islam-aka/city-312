@@ -1,19 +1,24 @@
 .favorite {
   @apply pb-9 font-[gilroy] m-auto;
   &__Card {
-    @apply w-[324px] h-[300px] border-solid border rounded-2xl shadow ;
+    @apply w-[324px] h-[270px] border-solid border rounded-2xl shadow ;
     @apply sm:w-[275px] sm:h-[300px];
-    @apply lg:w-[275px] lg:h-[320px];
+    @apply lg:w-[275px] lg:h-[320px] md:w-[275px];
+    @apply lg:h-[250px] xl:w-[387px] ;
+    // @apply md:h-[250px];
+    @apply xl:h-[310px];
     // @apply lg:w-[180px] ;
     // box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.5);
     &_top {
-      @apply absolute flex justify-between m-2 text-xs items-center w-[310px];
-      @apply  sm:w-[260px];
+      @apply absolute flex justify-between m-2 text-[8px] items-center w-[310px];
+      @apply  sm:w-[260px] ;
+      @apply  xl:w-[370px] text-[12px];
       img {
-        @apply md:w-8 ;
+        @apply w-[25px] h-[25px];
+        @apply xl:w-[25px] xl:h-[25px];
       }
       &_left {
-        @apply flex bg-white rounded-2xl p-1 ;
+        @apply flex bg-white rounded-2xl p-1 items-center;
       }
       &_right {
         @apply bg-white rounded-3xl right-0 p-2 text-center text-base;
@@ -21,22 +26,25 @@
       &_bottom {
         @apply absolute rounded-2xl top-24 md:text-[12px] font-semibold p-1 bg-yellow-400;
         @apply sm:top-20 ;
+        @apply xl:top-32 ;
       }
     }
     &_desc {
       @apply p-2 bg-white;
       h3 {
-        @apply font-[600];
+        @apply font-[600] text-[12px];
+        @apply xl:text-[16px];
       }
       span{
-        @apply text-gray-800;
+        @apply text-gray-800 text-[12px];
         
       }
       p {
-        @apply py-2 ;
+        @apply py-2 text-[11px];
+        @apply xl:text-[14px];
         &:nth-last-child(1){
-          color: #0077FF;
-          @apply p-0;
+          // color: #0077FF;
+          @apply text-[12px] text-[#0077FF] p-0;
         }
       }
       &_flex {
