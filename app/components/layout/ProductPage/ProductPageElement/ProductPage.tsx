@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 
 //components
 import Btn from '@/components/ui/Btn/Btn';
-import FPageSlder from './slider/FPageSlider';
 import Map from '../../Map/Map'
 import { useJsApiLoader } from '@react-google-maps/api'
 
@@ -13,11 +12,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 // interfaces
-import { IFavoritesPage } from './FavoritesPage.interface';
+import { IProductPage } from './ProductPage.interface';
 import {menuData} from './Menudesc.data'
 
 // styles
-import styles from './FavoritesPage.module.scss';
+import styles from './ProductPage.module.scss';
 import Footer from '../../Footer/Footer';
 import Menudesc from './menuDesc/Menudesc';
 import StocksSliders from '../../Stocks/StocksSliders';
@@ -32,7 +31,7 @@ type Libraries = (
 )[]
 
 const libraries: Libraries = ['places']
-const FavoritesPage: FC <{data: IFavoritesPage}>= ({data}) => {
+const ProductPage: FC <{data: IProductPage}>= ({data}) => {
   
   const { isLoaded } = useJsApiLoader({
 		id: 'google-map-script',
@@ -55,7 +54,6 @@ const FavoritesPage: FC <{data: IFavoritesPage}>= ({data}) => {
             <h1>{data.name}</h1>
             <span>{data.address}</span>
           </div>
-          {/* <FPageSlder image={data.images} /> */}
           <img src={data.images} alt="" />
         </div>
         <div className={styles.favoritePage__flex_right}>
@@ -134,4 +132,4 @@ const FavoritesPage: FC <{data: IFavoritesPage}>= ({data}) => {
   )
 }
 
-export default FavoritesPage
+export default ProductPage

@@ -1,6 +1,6 @@
-import { IFavoritesPage } from "./FavoritesPage.interface";
+import { IProductPage } from "./ProductPage.interface";
 
-export const favoritesPage: IFavoritesPage = {
+export const favoritesPage: IProductPage = {
     id: 1,
 	images: 'https://i.ibb.co/1ztsJR1/Rectangle-2565.png',
 	logo: '',

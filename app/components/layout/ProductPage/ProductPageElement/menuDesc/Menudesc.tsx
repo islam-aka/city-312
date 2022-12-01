@@ -25,11 +25,6 @@ const Menudesc: FC <{menuData: IMenu}>= (menuData) => {
   const toggleActive = (index :number) => {
     setActive({ ...active, activeObject: active.objects[index] });
   }
-  // const toggleActiveDesc = (id: number) => {
-  //   if (active.objects[id] === active.activeObject) {
-  //     return <p> {active.objects[id].name}</p>
-  //   } 
-  // }
   return (
     <>
       <div className={styles.menuDesc}>

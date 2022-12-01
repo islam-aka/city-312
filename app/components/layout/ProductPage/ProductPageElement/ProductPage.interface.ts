@@ -15,7 +15,7 @@ export interface IlocationItem {
 	lng: number
 }
 
-export interface IFavoritesPage {
+export interface IProductPage {
 	id: number
 	images: string
 	logo: string

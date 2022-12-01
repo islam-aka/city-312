@@ -1,0 +1,72 @@
+.whoBenefits {
+  @apply block w-[300px] text-center m-auto font-gilroy;
+  @apply sm:flex sm:flex-row-reverse sm:w-[600px] sm:justify-between sm:items-center sm:text-start;
+  @apply lg:w-[728px];
+  @apply md:w-[984px];
+  @apply xl:w-[1090px];
+  &_description {
+    @apply w-[300px];
+    @apply sm:w-[280px];
+    @apply lg:w-[380px];
+    @apply md:w-[500px];
+    h2 {
+      @apply text-[17px] font-[700];
+      @apply sm:text-[20px];
+    }
+    p {
+      @apply text-[15px] font-[500];
+      @apply sm:text-[12px] sm:font-[400];
+      @apply lg:text-[15px];
+    }
+  }
+  &_Cube {
+    @apply block w-[265px];
+    @apply sm:w-[276px];
+    @apply lg:w-[305px];
+    @apply md:w-[387px];
+    @apply xl:w-[605px];
+    .whoBenefits_infoCube {
+      @apply flex items-center w-[300px] mt-[20px] p-[10px] border border-4 rounded-[15px] ;
+      @apply sm:mt-[0] sm:w-[276px];
+      @apply md:w-[387px] md:justify-between;
+      @apply xl:w-[450px];
+      &:last-child {
+        @apply sm:ml-[35px];
+        @apply md:ml-[35px] md:mt-[5px];
+      }
+      &_desc {
+        @apply w-[194px] text-left ;
+        @apply md:w-[300px] md:px-[20px];
+        p {
+          @apply text-[13px] font-[500] text-[#838383];
+          @apply sm:text-[11px];
+          @apply lg:text-[10px];
+          @apply md:text-[14px];
+          
+        }
+        h3 {
+          @apply text-[17px] font-[700];
+          @apply sm:text-[15px];  
+          @apply lg:text-[16px]; 
+          @apply md:text-[20px] md:w-[190px]; 
+          @apply md:text-[20px] md:w-[190px]; 
+          @apply xl:text-[28px] xl:w-[334px]; 
+        }
+      }
+      &_CircleOverlay {
+        @apply relative w-[70px];
+        .circleImg {
+          @apply  top-0 right-0 w-[10px] relative;
+        }
+        .circleText {
+          @apply absolute top-5 right-4 text-[15px] font-[700];
+          @apply sm:text-[11px] sm:top-6 sm:right-5;
+          @apply lg:text-[12px] lg:top-6 lg:right-4;
+          @apply md:text-[14px];
+          @apply xl:text-[14px];
+        }
+      }
+    }
+  }
+  
+}

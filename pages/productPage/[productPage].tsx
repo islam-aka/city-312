@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
-import FavoritesPageContainer from '@/components/layout/FavoritesPage/FavoritesPageContainer'
+import FavoritesPageContainer from '@/components/layout/ProductPage/ProductPageContainer'
 import Header from '@/components/layout/Header/Header'
 
-const favoritesId: FC = () => {
+const ProductId: FC = () => {
   return (
     <div>
       <Header />
@@ -12,4 +12,4 @@ const favoritesId: FC = () => {
   )
 }
 
-export default favoritesId
+export default ProductId 
