@@ -1,5 +1,5 @@
 .userCard {
-	@apply max-w-[1130px] w-full mx-auto flex lg:mt-28 mt-0 md:justify-between justify-around flex-col lg:flex-row lg:items-start items-center font-["Gilroy"] pb-10;
+	@apply max-w-[1130px] w-full mx-auto flex md:justify-between justify-around flex-col lg:flex-row lg:items-start items-center font-["Gilroy"] pb-10;
 
 	.userCard__info {
 		@apply w-[305px] lg:w-[430px];

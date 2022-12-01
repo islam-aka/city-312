@@ -12,7 +12,7 @@ const UserCard: FC = () => {
 			<Header />
 			<div className={styles.userCard}>
 				<div>
-					<UserProfile data={userProfile} />
+					<UserProfile />
 				</div>
 				<div>
 					<UserCards data={userProfile} />

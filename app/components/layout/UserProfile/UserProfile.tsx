@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import React, { FC } from 'react'
 
 import Btn from '@/components/ui/Btn/Btn'
+import { userProfile } from '@/components/layout/UserCard/userCard.data'
 
 import user from '@/assets/images/userAvatar.png'
 import card from '@/assets/svg/card.svg'
@@ -14,9 +15,11 @@ import usageHistory from '@/assets/svg/usageHistory.svg'
 import advertising from '@/assets/images/Advertising.png'
 
 import styles from './userProfile.module.scss'
-import { IUser } from '../UserCard/userCard.interface'
 
-const UserProfile: FC<IUser> = ({ data }) => {
+const UserProfile: FC = () => {
+	const data = userProfile
+	console.log(data)
+
 	const router = useRouter()
 
 	return (
@@ -35,7 +38,7 @@ const UserProfile: FC<IUser> = ({ data }) => {
 					/>
 					<div className="ml-[25px]">
 						<p className="font-semibold text-[16px] leading-[19px]">
-							{`${data.second_name} ${data.name}`}.
+							{`${data.second_name} ${data.name[0]}`}.
 						</p>
 						<p className="text-[16px] leading-[19px]">пользователь</p>
 					</div>
@@ -50,7 +53,7 @@ const UserProfile: FC<IUser> = ({ data }) => {
 							color: 'white',
 						}}
 					>
-						+996 555 55 55 55
+						{data.phone_number}
 					</Btn>
 					<Btn
 						style={{
@@ -71,31 +74,35 @@ const UserProfile: FC<IUser> = ({ data }) => {
 								router.pathname === '/userCard' ? styles.active : styles.none
 							}
 						>
-							<Image
-								width={18}
-								height={18}
-								src={card}
-								alt="City-312"
-								draggable={false}
-							/>
-							<span>Моя карта</span>
+							<div className="flex gap-[25px]">
+								<Image
+									width={18}
+									height={18}
+									src={card}
+									alt="City-312"
+									draggable={false}
+								/>
+								<span>Моя карта</span>
+							</div>
 						</a>
 					</Link>
 
-					<Link href="/favourites">
+					<Link href="/productPage">
 						<a
 							className={
-								router.pathname === '/favourites' ? styles.active : styles.none
+								router.pathname === '/productPage' ? styles.active : styles.none
 							}
 						>
-							<Image
-								width={18}
-								height={18}
-								src={favourites}
-								alt="City-312"
-								draggable={false}
-							/>
-							<span>Избранное</span>
+							<div className="flex gap-[25px]">
+								<Image
+									width={18}
+									height={18}
+									src={favourites}
+									alt="City-312"
+									draggable={false}
+								/>
+								<span>Избранное</span>
+							</div>
 						</a>
 					</Link>
 
@@ -107,14 +114,18 @@ const UserProfile: FC<IUser> = ({ data }) => {
 									: styles.none
 							}
 						>
-							<Image
-								width={18}
-								height={18}
-								src={notifications}
-								alt="City-312"
-								draggable={false}
-							/>
-							<span>Уведомления</span>
+							<div className="flex items-center gap-[25px] relative">
+								<Image
+									width={18}
+									height={18}
+									src={notifications}
+									alt="City-312"
+									draggable={false}
+								/>
+								<span>Уведомления</span>
+								<div className="w-[6.25px] h-[6.25px] rounded-[50%] bg-[#FF5E61] absolute top-[2px] left-3"></div>
+							</div>
+
 							<span className={styles.info}>4</span>
 						</a>
 					</Link>
@@ -124,14 +135,16 @@ const UserProfile: FC<IUser> = ({ data }) => {
 								router.pathname === '/message' ? styles.active : styles.none
 							}
 						>
-							<Image
-								width={18}
-								height={18}
-								src={message}
-								alt="City-312"
-								draggable={false}
-							/>
-							<span>Сообщения</span>
+							<div className="flex gap-[25px]">
+								<Image
+									width={18}
+									height={18}
+									src={message}
+									alt="City-312"
+									draggable={false}
+								/>
+								<span>Сообщения</span>
+							</div>
 							<span className={styles.info}>3</span>
 						</a>
 					</Link>
@@ -143,14 +156,16 @@ const UserProfile: FC<IUser> = ({ data }) => {
 									: styles.none
 							}
 						>
-							<Image
-								width={18}
-								height={18}
-								src={usageHistory}
-								alt="City-312"
-								draggable={false}
-							/>
-							<span>История пользования</span>
+							<div className="flex gap-[25px]">
+								<Image
+									width={18}
+									height={18}
+									src={usageHistory}
+									alt="City-312"
+									draggable={false}
+								/>
+								<span>История пользования</span>
+							</div>
 						</a>
 					</Link>
 				</div>

@@ -5,7 +5,7 @@
 	.userProfile__btn {
 		@apply flex flex-col font-medium;
 		a {
-			@apply flex items-center gap-[25px] rounded-[8.92216px] m-4 text-[16px] leading-[22px];
+			@apply flex items-center justify-between gap-[25px] rounded-[8.92216px] m-4 text-[16px] leading-[22px];
 			.info {
 				background: linear-gradient(0deg, #7ec9f5 0%, #3957ed 97.5%);
 				@apply rounded-[11.5901px] font-semibold text-[16px] leading-[22px] py-[5px] px-[10px] text-white;
