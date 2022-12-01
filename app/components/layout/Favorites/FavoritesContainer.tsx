@@ -1,12 +1,13 @@
 import React, { FC } from 'react'
-import Favorites from './FavItems/Favorites'
-import { favoritesCard } from './FavItems/favorites.data'
-
+import Favorites from './Favorites'
+import { favoritesCard } from './favorites.data'
 
 const FavoritesContainer: FC = () => {
-  return (
-    <div><Favorites data={favoritesCard} /></div>
-  )
+	return (
+		<div>
+			<Favorites data={favoritesCard} />
+		</div>
+	)
 }
 
 export default FavoritesContainer

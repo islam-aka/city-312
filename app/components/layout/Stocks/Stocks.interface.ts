@@ -13,5 +13,5 @@ export interface IStocksItem {
 }
 
 export interface IStocks {
-	items: IStocksItem[]
+	data: IStocksItem[]
 }

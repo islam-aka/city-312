@@ -15,5 +15,7 @@ export const partnerPage: IPartnerPage = {
 		lat: 42.8749873,
 		lng: 74.60200979999999,
 	},
+	social_network:
+		'{"whatsApp":"996555","youtube":"https://www.youtube.com","telegram":"55555555","instagram":"dasdas","facebook":"asdasdasd"}',
 	address: 'г. Бишкек, ул. Киевская 77, вход со стороны Киевской ',
 }

@@ -24,4 +24,5 @@ export interface IPartnerPage {
 	rating: number
 	location: IlocationItem
 	address: string
+	social_network: string
 }

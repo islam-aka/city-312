@@ -1,6 +1,43 @@
 .partnerPages {
-	@apply font-['Gilroy'];
-	&__sliders {
-		@apply grid gap-5 max-w-[1130px] mx-auto grid-cols-3 font-['Gilroy'];
+	&__profileHeader {
+		@apply w-full h-[150px] sm:h-[250px] md:h-[373px] mt-[65px] relative overflow-hidden;
+		div {
+			@apply w-[200%] sm:w-full h-[150px] sm:h-[250px] md:h-[373px]  absolute left-[-250px] sm:left-0;
+		}
 	}
+	&__content {
+		@apply relative max-w-[1200px] mx-auto;
+		width: calc(100% - 50px);
+
+		&_logo {
+			@apply w-[80px] h-[80px] sm:w-[157px] sm:h-[157px] rounded-[50%] absolute sm:top-[-170px] top-[-100px];
+			@apply md:top-[-70px];
+		}
+
+		&_contacts {
+			@apply py-[20px] px-3 w-[280px] lg:ml-2 mt-10;
+			box-shadow: 0px 0px 10.9672px rgba(0, 0, 0, 0.25);
+			border-radius: 10.9672px;
+		}
+		&_feedback_btn {
+			@apply max-w-[460px] mt-12 md:mt-0 md:max-w-[232px] w-full h-auto md:h-32 grid grid-cols-1 sm:grid-cols-2  gap-4;
+			@apply md:grid-cols-1;
+
+			button:first-child {
+				@apply w-full py-[15px] px-0 text-[white] font-medium text-[18px];
+				background: #0077ff;
+			}
+			button:last-child {
+				@apply w-full py-[15px] px-0 text-[black] font-medium text-[18px];
+				background: white;
+				width: "100%";
+				box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+			}
+		}
+		&__sliders {
+			@apply grid gap-5 max-w-[1130px] mx-auto grid-cols-3 font-['Gilroy'];
+		}
+	}
+
+	@apply font-['Gilroy'];
 }

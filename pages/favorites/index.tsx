@@ -1,8 +1,8 @@
-import { IFavorites } from '@/components/layout/Favorites/FavItems/favorites.interface'
+import { IFavorites } from '@/components/layout/Favorites/favorites.interface'
 import FavoritesContainer from '@/components/layout/Favorites/FavoritesContainer'
 import React, { FC } from 'react'
 
-const Favorites: FC = () => {
+const ProductPage: FC = () => {
 
   return (
     <div>
@@ -11,4 +11,4 @@ const Favorites: FC = () => {
   )
 }
 
-export default Favorites
+export default ProductPage

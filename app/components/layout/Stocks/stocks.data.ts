@@ -1,7 +1,7 @@
 import { IStocks } from './Stocks.interface'
 
 export const stocksCard: IStocks = {
-	items: [
+	data: [
 		{
 			id: 1,
 			logo_partner:

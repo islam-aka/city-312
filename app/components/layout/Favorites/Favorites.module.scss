@@ -1,22 +1,19 @@
 .favorites {
   @apply max-w-full pt-28;
   &_flex {
-    @apply block m-auto w-[];
-    @apply sm:flex justify-evenly  lg:w-[768px] ;
-    @apply md:justify-evenly md:w-[1024px] ;
-    @apply xl:justify-evenly xl:w-[1440px];
+    @apply flex justify-between max-w-[1130px] mx-auto;
 
     .userProfile {
       @apply w-[300px] m-auto sm:m-0;
     }
     &__favBlock {
-      @apply w-[320px] pt-[20px] m-auto ;
+      @apply w-[320px] pt-[20px] m-auto;
       @apply sm:w-[320px] sm:m-0;
       @apply lg:w-[320px];
       @apply md:w-[600px];
       @apply xl:w-[800px];
       &_title {
-        @apply flex items-center pb-[20px];
+        @apply flex items-center gap-5 pb-[20px];
         div {
           @apply border border-solid border-[red] rounded-2xl p-1;
         }
@@ -28,7 +25,7 @@
         @apply grid gap-x-5 grid-cols-1 w-[300px];
         @apply sm:w-[275px];
         @apply lg:w-[275px];
-        @apply md:w-[600px] md:grid md:gap-x-[30px] md:grid-cols-2 ;
+        @apply md:w-[600px] md:grid md:gap-x-[30px] md:grid-cols-2;
         @apply xl:w-[800px];
       }
     }
