@@ -1,10 +1,10 @@
-import { IAdvertisement } from './Advertisement.interface'
+import { IAdvertisement } from './advertisement.interface'
 
 export const advertisementCard: IAdvertisement = {
 	items: [
 		{
 			id: 1,
-			image: 'https://i.ibb.co/hVL3pBC/florissimo.png',
+			image: 'https://i.ibb.co/gMB20tM/optimize-1.png',
 			id_stock: 12,
 		},
 		{

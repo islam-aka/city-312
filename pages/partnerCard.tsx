@@ -1,12 +1,10 @@
 import React from 'react'
 import { GrSearch } from 'react-icons/gr'
-
 import Footer from '@/components/layout/Footer/Footer'
 import Header from '@/components/layout/Header/Header'
 import PartnerContainer from '@/components/layout/PartnerCard/PartnerContainer'
 import Btn from '@/components/ui/Btn/Btn'
 import Input from '@/components/ui/Input/Input'
-
 import styles from './partnerCard.module.scss'
 
 const PartnerCard = () => {
@@ -29,6 +27,7 @@ const PartnerCard = () => {
 					</Btn>
 				</div>
 			</div>
+
 			<Footer />
 		</>
 	)
