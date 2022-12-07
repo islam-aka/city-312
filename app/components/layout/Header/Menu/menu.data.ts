@@ -12,7 +12,7 @@ export const firstMenu: IMenu = {
 		},
 		{
 			title: 'Скидки',
-			link: '/discounts',
+			link: '/discount',
 		},
 		{
 			title: 'Партнерам',
