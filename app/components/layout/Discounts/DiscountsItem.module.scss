@@ -1,0 +1,21 @@
+.discountsItem {
+	@apply rounded-[20px] pb-2 w-[300px] sm:w-[360px] relative;
+	box-shadow: 4px 4px 31px -10px rgba(34, 60, 80, 0.2);
+	.item__partner {
+		@apply grid grid-cols-2 bg-white max-w-[170px] h-[35px] w-full overflow-hidden rounded-2xl p-[2px] flex gap-[10px] cursor-pointer;
+		grid-template-columns: 20% 80%;
+	}
+	.heart {
+		@apply flex items-center justify-center bg-white w-9 h-9 rounded-[25px] absolute right-2 cursor-pointer;
+		border: 0.851038px solid #eaeaea;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+	}
+	.share {
+		@apply flex justify-center items-center w-[36px] h-[36px] rounded-[20px] mr-3;
+		border: 0.851038px solid #eaeaea;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+	}
+	.item__bg {
+		@apply rounded-t-[20px] pt-[10px] flex justify-between relative;
+	}
+}

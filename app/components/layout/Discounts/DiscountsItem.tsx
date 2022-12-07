@@ -1,28 +1,21 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React, { FC } from 'react'
-import { AiOutlineHeart } from 'react-icons/ai'
-import { AiFillHeart } from 'react-icons/ai'
-import styles from './StocksItem.module.scss'
-import { IStocksItem } from './Stocks.interface'
+import { AiFillHeart, AiOutlineHeart } from 'react-icons/ai'
+import { IStocksItem } from '../Stocks/Stocks.interface'
+import styles from './DiscountsItem.module.scss'
 
-const StocksItem: FC<{ item: IStocksItem }> = ({ item }) => {
-	const [favourite, setFavourites] = React.useState(true)
+const DiscountsItem: FC<{ item: IStocksItem }> = ({ item }) => {
+	const [favourite, setFavourites] = React.useState(false)
+	let itemCategory = []
+	for (let i = 0; i < 2; i++) {
+		itemCategory[i] = item.partner_category.split(' ')[i]
+	}
 
 	return (
-		<div className={styles.stocksItem}>
-			<Link href={`/partner/${item.id}`}>
-				<a>
-					<div
-						style={{
-							background: `url(${item.image_stocks})`,
-							backgroundRepeat: 'no-repeat',
-							backgroundSize: 'cover',
-							width: '100%',
-							height: '158px',
-						}}
-						className={styles.item__bg}
-					>
+		<div className={styles.discountsItem}>
+			<div>
+				<div className="flex justify-between absolute top-2 z-50 w-full px-2">
+					<Link href={`/partner/${item.id}`}>
 						<div className={styles.item__partner}>
 							<div
 								style={{
@@ -35,26 +28,43 @@ const StocksItem: FC<{ item: IStocksItem }> = ({ item }) => {
 								}}
 							></div>
 							<div>
-								<p className="text-[12px] leading-3 font-semibold">
+								<p className="text-[12px] leading-3 font-semibold w-[100px]">
 									{item.name_partner}
 								</p>
-								<p className="text-[9px]">{item.partner_category}</p>
+								<p className="text-[9px]">
+									{itemCategory[0]} {itemCategory[1]}
+								</p>
 							</div>
 						</div>
-
-						<div
-							className={styles.heart}
-							onClick={() => setFavourites(!favourite)}
-						>
-							{favourite ? (
-								<AiFillHeart color="red" />
-							) : (
-								<AiOutlineHeart color="red" />
-							)}
-						</div>
+					</Link>
+					<div
+						className={styles.heart}
+						onClick={() => setFavourites(!favourite)}
+					>
+						{favourite ? (
+							<AiFillHeart color="red" />
+						) : (
+							<AiOutlineHeart color="red" />
+						)}
 					</div>
-				</a>
-			</Link>
+				</div>
+
+				<Link href={`/productPage/${item.id}`}>
+					<a>
+						<div
+							style={{
+								background: `url(${item.image_stocks})`,
+								backgroundRepeat: 'no-repeat',
+								backgroundSize: 'cover',
+								width: '100%',
+								height: '158px',
+							}}
+							className={styles.item__bg}
+						></div>
+					</a>
+				</Link>
+			</div>
+
 			<div className="mt-2 text-black-900 px-3 relative">
 				<div className="flex gap-5 justify-between mb-4">
 					<h3 className="font-semibold h-[50px h-[50px] overflow-hidden">
@@ -83,4 +93,4 @@ const StocksItem: FC<{ item: IStocksItem }> = ({ item }) => {
 	)
 }
 
-export default StocksItem
+export default DiscountsItem
