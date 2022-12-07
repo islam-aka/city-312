@@ -6,12 +6,16 @@ import Layout from '@/components/layout/Layout'
 
 import { IHome } from './home.interface'
 import WhoBenefits from '@/components/layout/WhoBenefits/WhoBenefits'
+import TypesOfDiscount from '@/components/layout/TypesOfDiscount/TypesOfDiscount'
+import Location from '@/components/layout/Location/Location'
 
 const Home: FC<IHome> = () => {
 	return (
 		<Layout>
 			<HowItWorks />
 			<WhoBenefits />
+			<TypesOfDiscount />
+			<Location />
 		</Layout>
 	)
 }

@@ -10,31 +10,52 @@
     @apply lg:w-[380px];
     @apply md:w-[500px];
     h2 {
-      @apply text-[17px] font-[700];
-      @apply sm:text-[20px];
+      @apply text-gray-700 text-[1.063rem] font-bold text-center uppercase relative;
+			@apply sm:text-[1.25rem] sm:text-left;
+      &:after {
+        content: '';
+        box-shadow: inset 0px 2.18616px 2.91488px rgba(0, 0, 0, 0.25),
+          inset -1.45744px -2.91488px 2.91488px #ffffff;
+        @apply absolute top-8 left-[36%] w-24 h-3 bg-gray-200;
+        @apply sm:left-0;
+      }
     }
     p {
-      @apply text-[15px] font-[500];
+      @apply mt-6 text-[15px] font-[500];
       @apply sm:text-[12px] sm:font-[400];
       @apply lg:text-[15px];
     }
   }
   &_Cube {
     @apply block w-[265px];
-    @apply sm:w-[276px];
-    @apply lg:w-[305px];
+    @apply sm:w-[290px];
+    @apply lg:w-[335px];
     @apply md:w-[387px];
     @apply xl:w-[605px];
     .whoBenefits_infoCube {
-      @apply flex items-center w-[300px] mt-[20px] p-[10px] border border-4 rounded-[15px] ;
-      @apply sm:mt-[0] sm:w-[276px];
-      @apply md:w-[387px] md:justify-between;
-      @apply xl:w-[450px];
+      .borderImg {
+        @apply relative top-0 left-0;
+      }
+      @apply flex items-center w-[300px] mt-[20px] p-[10px]  rounded-[8px];
+      background: url('../../../assets/svg/border_WhoBenefit.svg') ;
+      background-size: 290px;
+      background-repeat: no-repeat;
+      @media all and (min-width:1024px) {
+        background-size: 360px;
+      }
+      @media all and (min-width:1440px) {
+        background-size: 430px;
+      }
+      @apply sm:mt-[0] sm:w-[290px];
+      @apply md:w-[360px] md:justify-between;
+      @apply xl:w-[450px] xl:justify-evenly;
       &:last-child {
-        @apply sm:ml-[35px];
-        @apply md:ml-[35px] md:mt-[5px];
+        @apply mt-[10px];
+        @apply sm:ml-[25px] sm:mt-[-15px];
+        @apply md:ml-[25px] md:mt-[0px];
       }
       &_desc {
+        
         @apply w-[194px] text-left ;
         @apply md:w-[300px] md:px-[20px];
         p {
@@ -50,19 +71,20 @@
           @apply lg:text-[16px]; 
           @apply md:text-[20px] md:w-[190px]; 
           @apply md:text-[20px] md:w-[190px]; 
-          @apply xl:text-[28px] xl:w-[334px]; 
+          @apply xl:text-[28px] xl:w-[300px]; 
         }
       }
       &_CircleOverlay {
         @apply relative w-[70px];
         .circleImg {
           @apply  top-0 right-0 w-[10px] relative;
+          @apply  xl:w-[15px];
         }
         .circleText {
           @apply absolute top-5 right-4 text-[15px] font-[700];
           @apply sm:text-[11px] sm:top-6 sm:right-5;
-          @apply lg:text-[12px] lg:top-6 lg:right-4;
-          @apply md:text-[14px];
+          @apply lg:text-[12px] lg:top-6 lg:right-5;
+          @apply md:text-[14px] md:top-5 md:right-4;
           @apply xl:text-[14px];
         }
       }

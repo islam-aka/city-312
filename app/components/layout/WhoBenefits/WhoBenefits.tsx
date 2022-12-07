@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React, { FC } from 'react'
 
 import circle from '../../../assets/images/Circle.png'
+import border from '../../../assets/svg/border_WhoBenefit.svg'
 
 import styles from './WhoBenefits.module.scss'
 

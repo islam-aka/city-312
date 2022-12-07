@@ -6,7 +6,6 @@ import Map from '../../Map/Map'
 import { useJsApiLoader } from '@react-google-maps/api'
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -17,7 +16,6 @@ import {menuData} from './Menudesc.data'
 
 // styles
 import styles from './ProductPage.module.scss';
-import Footer from '../../Footer/Footer';
 import Menudesc from './menuDesc/Menudesc';
 import StocksSliders from '../../Stocks/StocksSliders';
 import { stocksCard } from '../../Stocks/stocks.data';
@@ -83,8 +81,6 @@ const ProductPage: FC <{data: IProductPage}>= ({data}) => {
         
         <div className={styles.favoritePage__description_title}>
           <Menudesc menuData={menuData} />
-          {/* <Menudesc  /> */}
-          {/* <p>{data.descript}</p> */}
         </div>
         <div className={styles.favoritePage__description_address}  id='address'>
           <p>Адрес</p>
@@ -127,7 +123,6 @@ const ProductPage: FC <{data: IProductPage}>= ({data}) => {
         </div>
       </div>
       </div>
-      {/* <Footer /> */}
     </div>
   )
 }
