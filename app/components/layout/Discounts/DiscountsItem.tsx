@@ -14,7 +14,7 @@ const DiscountsItem: FC<{ item: IStocksItem }> = ({ item }) => {
 	return (
 		<div className={styles.discountsItem}>
 			<div>
-				<div className="flex justify-between absolute top-2 z-50 w-full px-2">
+				<div className="flex justify-between absolute top-2 z-10 w-full px-2">
 					<Link href={`/partner/${item.id}`}>
 						<div className={styles.item__partner}>
 							<div
@@ -28,7 +28,7 @@ const DiscountsItem: FC<{ item: IStocksItem }> = ({ item }) => {
 								}}
 							></div>
 							<div>
-								<p className="text-[12px] leading-3 font-semibold w-[100px]">
+								<p className="text-[12px] leading-3 font-semibold">
 									{item.name_partner}
 								</p>
 								<p className="text-[9px]">

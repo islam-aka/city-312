@@ -1,0 +1,42 @@
+.catalogWrapper {
+	@apply relative font-['Gilroy'];
+	.burger {
+		@apply flex  w-[183px] rounded-[10px] px-[15px] py-[10px] items-center gap-[18px] cursor-pointer;
+		background: linear-gradient(180deg, #ffe25a 0%, #ffa852 100%);
+		&Menu {
+			@apply flex flex-col gap-1 w-[24px] h-[17px] relative;
+
+			.line {
+				@apply bg-black-900 w-6 h-[3px] opacity-100;
+				transition: 500ms;
+			}
+			.lineTop {
+				@apply bg-black-900 w-6 h-[3px] absolute top-[50%] left-0;
+				transition: 500ms;
+				transform: rotate(50deg);
+			}
+			.lineNone {
+				@apply bg-black-900 w-6 h-[3px] opacity-0;
+				transition: 100ms;
+			}
+			.lineBottom {
+				@apply bg-black-900 w-6 h-[3px] absolute top-[50%] left-0;
+				transition: 500ms;
+				transform: rotate(-50deg);
+			}
+		}
+		p {
+			@apply font-medium text-[18px] leading-[21px] text-black-700;
+			color: #212121;
+		}
+	}
+
+	.catalog {
+		@apply w-full  absolute top-[50px] z-50 h-[80.8vh];
+		background: rgba(0, 0, 0, 0.295);
+		transition: 300ms;
+	}
+	.catalogNone {
+		@apply grid absolute grid-cols-3 invisible w-full h-0;
+	}
+}

@@ -2,7 +2,7 @@
 	@apply rounded-[20px] pb-2 w-[300px] sm:w-[360px] relative;
 	box-shadow: 4px 4px 31px -10px rgba(34, 60, 80, 0.2);
 	.item__partner {
-		@apply grid grid-cols-2 bg-white max-w-[170px] h-[35px] w-full overflow-hidden rounded-2xl p-[2px] flex gap-[10px] cursor-pointer;
+		@apply grid grid-cols-2 bg-white max-w-[200px] h-[35px] w-full overflow-hidden rounded-2xl p-[2px] cursor-pointer;
 		grid-template-columns: 20% 80%;
 	}
 	.heart {
