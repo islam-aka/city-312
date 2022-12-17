@@ -35,7 +35,7 @@ const Location = () => {
 			    {isLoaded ? <Map center={defaultCenter} /> : <h2>loading</h2>}
             </div>
             <div className={styles.Wrapper_address}>
-                <h4>Наш адрес </h4>
+                <h3>Наш адрес </h3>
                 <p>Бишкек</p>
                 <div className={styles.Wrapper_item}>
                     <h4>Офис</h4>

@@ -1,0 +1,53 @@
+.Feedback {
+    @apply mt-28 mb-12;
+    &__Wrapper {
+		@apply max-w-[23.8rem] m-auto px-5;
+		@apply sm:max-w-[60.7rem] sm:px-5 sm:m-auto;
+		@apply lg:max-w-[63.063rem] m-auto;
+		@apply md:max-w-[70.625rem] md:p-[1.25rem];
+        h2 {
+            @apply text-[21px] font-[700] text-center uppercase relative mb-7   ;
+            @apply sm:text-[20px] sm:font-[700];
+            @apply xl:text-[28px] xl:font-[700];
+            &:after {
+                content: '';
+                box-shadow: inset 0px 2.18616px 2.91488px rgba(0, 0, 0, 0.25),
+                    inset -1.45744px -2.91488px 2.91488px #ffffff;
+                @apply absolute top-8 left-[34%] w-24 h-3 bg-gray-200;
+                @apply sm:hidden;
+            }
+        }
+        .Wrapper__Text {
+            form {
+                @apply flex flex-col gap-11;
+                @apply md:flex md:flex-row md:justify-center md:gap-3 md:items-center;
+                input {
+                    @apply px-[19px] py-[14px];
+                    @apply sm:w-[252px] sm:px-[19px] sm:py-[14px];
+                    @apply md:w-[252px] md:h-[34px];
+                    @apply xl:w-[350px] xl:h-[34px];
+                    box-shadow: 0px 0px 3.58696px rgba(0, 0, 0, 0.25), inset 0px 0px 4.4837px #FFFFFF, inset 0px 0.896739px 4.4837px rgba(0, 0, 0, 0.25);
+                    &::placeholder {
+                        @apply text-[#C0C0C0];
+                    }
+                }
+                textarea {
+                    @apply px-[19px] py-[61px];
+                    @apply md:px-[19px] md:py-[9px] md:w-[428px] md:h-[34px];   
+                    @apply xl:w-[428px];   
+                    box-shadow: 0px 0px 3.58696px rgba(0, 0, 0, 0.25), inset 0px 0px 4.4837px #FFFFFF, inset 0px 0.896739px 4.4837px rgba(0, 0, 0, 0.25);
+                    &::placeholder {
+                        @apply text-[#C0C0C0];
+                    }
+                }
+                button {
+                    @apply text-[14px] px-16 py-3 rounded-[8px] ;
+                    @apply sm:text-[10px] sm:px-10 sm:py-3 sm:w-40;
+                    @apply md:text-[10px] md:px-10 md:py-[0px] md:w-40 md:h-[34px];
+                    @apply xl:text-[14px] xl:w-[220px];
+                    background: linear-gradient(180deg, #FFE25A 0%, #FFA852 100%);
+                }
+            }
+        }
+    }
+}

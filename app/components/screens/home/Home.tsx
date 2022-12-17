@@ -8,6 +8,9 @@ import { IHome } from './home.interface'
 import WhoBenefits from '@/components/layout/WhoBenefits/WhoBenefits'
 import TypesOfDiscount from '@/components/layout/TypesOfDiscount/TypesOfDiscount'
 import Location from '@/components/layout/Location/Location'
+import Feedback from '@/components/layout/Feedback/Feedback'
+import Reviews from '@/components/layout/Reviews/Reviews'
+import PartnerCardSlider from '@/components/layout/PartnerCard/PartnerCardSlider/PartnerCardSlider'
 
 const Home: FC<IHome> = () => {
 	return (
@@ -15,7 +18,10 @@ const Home: FC<IHome> = () => {
 			<HowItWorks />
 			<WhoBenefits />
 			<TypesOfDiscount />
+			<Reviews />
+			<PartnerCardSlider />
 			<Location />
+			<Feedback />
 		</Layout>
 	)
 }

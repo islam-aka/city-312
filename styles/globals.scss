@@ -74,3 +74,17 @@ input:focus {
 	color: white;
 	margin-top: -80px;
 }
+
+// .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+// 	background: linear-gradient(180deg, #FFE25A 0%, #FFA852 100%);
+// }
+// .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+// 	background: #000;
+// }	
+.swiper-pagination-bullet {
+	opacity: 1 !important;
+	background: #404040;
+}
+.swiper-pagination-bullet-active{
+	background: #f5c521 !important;
+}
