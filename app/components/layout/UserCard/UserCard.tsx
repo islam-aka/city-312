@@ -1,10 +1,10 @@
 import Btn from '@/components/ui/Btn/Btn'
 import React, { FC } from 'react'
-import { IUser } from './userCard.interface'
+import { IUserProfile } from '../Profile/profile.interface'
 import styles from './UserCard.module.scss'
 
-const UserCards: FC<IUser> = ({ data }) => {
-	console.log(data)
+const UserCards: FC<IUserProfile> = (user) => {
+	console.log(user)
 
 	return (
 		<div className={styles.userCard}>
@@ -62,7 +62,7 @@ const UserCards: FC<IUser> = ({ data }) => {
 								</p>
 							</div>
 						</div>
-						<div className="md:block inline-block mt-5">
+						<div className="md:block inline-block mt-5 text-center lg:text-start">
 							<Btn>Продлить</Btn>
 						</div>
 					</div>

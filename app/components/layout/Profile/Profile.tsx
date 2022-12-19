@@ -5,34 +5,62 @@ import React, { FC } from 'react'
 
 import Btn from '@/components/ui/Btn/Btn'
 
-import user from '@/assets/images/userAvatar.png'
+import userCircle from '@/assets/images/userCircle.png'
 import card from '@/assets/svg/card.svg'
 import favourites from '@/assets/svg/favourites.svg'
+import plusImg from '@/assets/svg/plus.svg'
 import message from '@/assets/svg/message.svg'
 import notifications from '@/assets/svg/notifications.svg'
 import usageHistory from '@/assets/svg/usageHistory.svg'
 
-import styles from './UsersProfile.module.scss'
+import styles from './Profile.module.scss'
+import { IProfile } from './profile.interface'
+import { AiOutlinePlus } from 'react-icons/ai'
 
-const UserProfile: FC = () => {
+const UserProfile: FC<IProfile> = (user) => {
 	const router = useRouter()
+	console.log(user)
 
 	return (
 		<div className={styles.userProfile}>
-			<h2 className="font-semibold text-[18px] leading-[21px]">мой профиль</h2>
-			<div className="flex mt-5">
-				<Image
-					width={45}
-					height={45}
-					src={user}
-					alt="City-312"
-					draggable={false}
-				/>
+			<button className="font-semibold text-[18px] leading-[21px]">
+				мой профиль
+			</button>
+			<div className="flex items-center mt-5">
+				<div className="relative">
+					<Image
+						width={60}
+						height={60}
+						src={userCircle}
+						alt="City-312"
+						draggable={false}
+					/>
+					<div
+						style={{
+							backgroundRepeat: 'no-repeat',
+							backgroundSize: 'cover !important',
+
+							position: 'absolute',
+							background: `url(${
+								user.img !== undefined ? user.img : user.logo
+							}) `,
+							top: '8px',
+							left: '7px',
+							borderRadius: '50%',
+							width: '45px',
+							height: '45px',
+						}}
+					></div>
+				</div>
 				<div className="ml-[25px]">
-					<p className="font-semibold text-[16px] leading-[19px]">
-						Жамшитов Ж.
+					<p className="font-semibold text-[16px] leading-[19px] max-w-[180px]">
+						{!user.isPartner
+							? `${user.name} ${user.second_name}`
+							: user.brand_name}
 					</p>
-					<p className="text-[16px] leading-[19px]">пользователь</p>
+					<p className="text-[16px] leading-[19px]">
+						{!user.isPartner ? 'пользователь' : 'партнер'}
+					</p>
 				</div>
 			</div>
 			<div className="mt-[15px] mb-6 flex gap-2">
@@ -45,7 +73,7 @@ const UserProfile: FC = () => {
 						color: 'white',
 					}}
 				>
-					+996 555 55 55 55
+					{user.phone_number}
 				</Btn>
 				<Btn
 					style={{
@@ -61,7 +89,11 @@ const UserProfile: FC = () => {
 			</div>
 			<div className={styles.userProfile__btn}>
 				<Link href="/userCard">
-					<a className={styles.active}>
+					<a
+						className={
+							router.pathname === '/userCard' ? styles.active : styles.none
+						}
+					>
 						<Image
 							width={18}
 							height={18}
@@ -69,24 +101,35 @@ const UserProfile: FC = () => {
 							alt="City-312"
 							draggable={false}
 						/>
-						<span>Моя карта</span>
+						<span>{!user.isPartner ? 'Моя карта' : 'Мои скидки'}</span>
 					</a>
 				</Link>
 
-				<Link href="/favourites">
+				<Link href="/favorites">
 					<a
 						className={
-							router.pathname === '/favourites' ? styles.active : styles.none
+							router.pathname === '/favorites' ? styles.active : styles.none
 						}
 					>
-						<Image
-							width={18}
-							height={18}
-							src={favourites}
-							alt="City-312"
-							draggable={false}
-						/>
-						<span>Избранное</span>
+						{!user.isPartner ? (
+							<Image
+								width={18}
+								height={18}
+								src={favourites}
+								alt="City-312"
+								draggable={false}
+							/>
+						) : (
+							<Image
+								width={25}
+								height={25}
+								src={plusImg}
+								alt="City-312"
+								draggable={false}
+							/>
+						)}
+
+						<span>{!user.isPartner ? 'Избранное' : 'Создать акцию '}</span>
 					</a>
 				</Link>
 

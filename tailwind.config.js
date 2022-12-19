@@ -23,6 +23,7 @@ module.exports = {
 			transparent: colors.transparent,
 			// Personal colors
 			yellow: {
+				300:'#EAA700',
 				400: '#F5C521',
 				700: '#F5C521',
 				800: '#FFA852',
@@ -46,7 +47,7 @@ module.exports = {
 				400: '#1B1B1B',
 				700: '#212121',
 				900: '#000000',
-			},
+			}
 		},
 		screens: {
 			xl: '1440px',

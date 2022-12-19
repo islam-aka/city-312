@@ -17,7 +17,10 @@ const Catalog: FC<TMenu> = ({ activityTypes, categorys, subCategorys }) => {
 
 	return (
 		<div className={styles.catalogWrapper}>
-			<div className="max-w-[1130px] mx-auto flex gap-[18px] mb-16">
+			<div
+				className="max-w-[1130px] mx-auto grid sm:flex gap-[18px] mb-16 justify-center"
+				style={{ width: 'calc(100% - 100px)' }}
+			>
 				<div className={styles.burger} onClick={() => setMenu(!menu)}>
 					<div className={styles.burgerMenu}>
 						<div className={!menu ? styles.line : styles.lineTop}></div>
@@ -26,9 +29,9 @@ const Catalog: FC<TMenu> = ({ activityTypes, categorys, subCategorys }) => {
 					</div>
 					<p>Каталог</p>
 				</div>
-				<div className="flex">
+				<div className="flex max-w-[712px] w-full">
 					<div
-						className="flex items-center py-[12px] px-[15px] w-[612px]"
+						className="flex items-center py-[12px] px-[15px] w-full"
 						style={{
 							background: '#FFFFFF',
 							boxShadow: '0px 0px 5px rgba(0, 0, 0, 0.25)',
@@ -43,7 +46,7 @@ const Catalog: FC<TMenu> = ({ activityTypes, categorys, subCategorys }) => {
 					<Btn
 						style={{
 							borderRadius: '0px 10px 10px 0px',
-							padding: '13px 33px',
+							padding: '13px 25px',
 						}}
 					>
 						Найти

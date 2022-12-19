@@ -1,7 +1,9 @@
 .userProfile {
-	@apply py-[25px] px-[20px] text-center w-[299px] h-[467px] font-['Gilroy'] bg-[#FFFFFF] rounded-[12.5328px];
-
+	@apply py-[25px] px-[20px] text-center w-[299px] font-['Gilroy'] bg-[#FFFFFF] rounded-[12.5328px] max-h-[520px] lg:w-full;
 	box-shadow: 0px 2.50656px 12.5328px -3.58256px rgba(0, 0, 0, 0.15);
+	@media all and (max-width: 768px) {
+		box-shadow: none;
+	}
 	.userProfile__btn {
 		@apply flex flex-col font-medium;
 		a {
@@ -14,6 +16,14 @@
 		.active {
 			@apply p-4 m-0;
 			background: linear-gradient(180deg, #ffe25a 0%, #ffa852 100%);
+			svg {
+				@apply w-[25px];
+			}
+		}
+		.none {
+			svg {
+				@apply w-[25px];
+			}
 		}
 	}
 }

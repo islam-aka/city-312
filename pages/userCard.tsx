@@ -1,21 +1,22 @@
 import React, { FC } from 'react'
 import Footer from '@/components/layout/Footer/Footer'
 import Header from '@/components/layout/Header/Header'
-import UserProfile from '@/components/layout/UserProfile/UserProfile'
+import Profile from '@/components/layout/Profile/Profile'
 import UserCards from '@/components/layout/UserCard/UserCard'
 import styles from './userCard.module.scss'
-import { userProfile } from '@/components/layout/UserCard/userCard.data'
+
+import { userProfile } from '@/components/layout/Profile/profile.data'
 
 const UserCard: FC = () => {
 	return (
 		<>
 			<Header />
 			<div className={styles.userCard}>
-				<div>
-					<UserProfile />
+				<div className={styles.profile}>
+					<Profile {...userProfile} />
 				</div>
 				<div>
-					<UserCards data={userProfile} />
+					<UserCards {...userProfile} />
 				</div>
 			</div>
 			<Footer />

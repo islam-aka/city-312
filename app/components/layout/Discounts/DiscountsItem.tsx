@@ -60,7 +60,20 @@ const DiscountsItem: FC<{ item: IStocksItem }> = ({ item }) => {
 								height: '158px',
 							}}
 							className={styles.item__bg}
-						></div>
+						>
+							<p
+								className="absolute top-[100%] flex items-center justify-center font-semibold text-[17px]"
+								style={{
+									background: '#F8A303',
+									borderRadius: ' 28.2051px',
+									width: '55px',
+									height: '29px',
+									transform: 'translate(5px , -35px)',
+								}}
+							>
+								{item.discount}%
+							</p>
+						</div>
 					</a>
 				</Link>
 			</div>

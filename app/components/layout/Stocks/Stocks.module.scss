@@ -1,3 +1,20 @@
 .stocks__container {
 	@apply flex flex-wrap justify-center xl:justify-start max-w-[1135px] w-full mx-auto;
 }
+.createStocks {
+	@apply font-['Gilroy'];
+	.nameStocks {
+		@apply flex relative rounded-[10px] items-center px-[15px] py-[10px] border-b-2 bg-gray-300;
+
+		input {
+			@apply outline-none  bg-transparent;
+		}
+	}
+	.priceStocks {
+		@apply flex relative rounded-[10px] items-center px-[15px] py-[10px] border-b-2 bg-gray-300;
+
+		input {
+			@apply outline-none  bg-transparent;
+		}
+	}
+}

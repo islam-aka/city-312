@@ -1,3 +1,10 @@
 .userCard {
-	@apply flex justify-between lg:flex-row flex-col  mx-auto mb-7 gap-10 max-w-[1200px] pt-24 w-full sm:px-10 px-0;
+	@apply flex justify-between lg:flex-row flex-col  mx-auto mb-7 gap-10 max-w-[1200px] pt-24 w-full sm:px-10 px-0 items-center lg:items-start;
+	.profile {
+		@apply flex justify-center w-[350px] lg:w-[299px];
+		@media all and (max-width: 768px) {
+			box-shadow: 0px 2.50656px 12.5328px -3.58256px rgba(0, 0, 0, 0.15);
+			border-radius: 12px;
+		}
+	}
 }
