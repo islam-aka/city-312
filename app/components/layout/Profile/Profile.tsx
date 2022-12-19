@@ -15,7 +15,6 @@ import usageHistory from '@/assets/svg/usageHistory.svg'
 
 import styles from './Profile.module.scss'
 import { IProfile } from './profile.interface'
-import { AiOutlinePlus } from 'react-icons/ai'
 
 const UserProfile: FC<IProfile> = (user) => {
 	const router = useRouter()

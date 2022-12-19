@@ -1,9 +1,9 @@
 import Btn from '@/components/ui/Btn/Btn'
 import React, { FC } from 'react'
-import { IUserProfile } from '../Profile/profile.interface'
+import { IProfile } from '../Profile/profile.interface'
 import styles from './UserCard.module.scss'
 
-const UserCards: FC<IUserProfile> = (user) => {
+const UserCards: FC<IProfile> = (user) => {
 	console.log(user)
 
 	return (
