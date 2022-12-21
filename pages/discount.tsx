@@ -12,7 +12,7 @@ const Discount: FC = () => {
 	return (
 		<>
 			<Header />
-			<div className="mt-[144px]">
+			<div>
 				<div>
 					<Catalog
 						activityTypes={activityTypeData}

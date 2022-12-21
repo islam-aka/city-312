@@ -62,13 +62,6 @@ const UserRegistration: FC = () => {
 						</div>
 					</div>
 					<div>
-						<p>Номер дисконтной карты</p>
-						<div className="flex bg-white rounded-[10px] items-center px-[12px] py-[10px]">
-							<Input type="text" placeholder="Номер дисконтной карты" />
-							<BsCheck color="#F5C521" size={'18px'} />
-						</div>
-					</div>
-					<div>
 						<p>Пароль</p>
 						<div className="flex bg-white rounded-[10px] items-center px-[12px] py-[10px]">
 							<Input type="text" placeholder="Пароль" />

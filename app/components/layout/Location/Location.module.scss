@@ -1,0 +1,50 @@
+.Location {
+	@apply mt-28 mb-12 text-center font-gilroy;
+    h2 {
+        @apply text-[17px] font-[700] mb-16 relative;
+        @apply sm:hidden;
+        &:after {
+            content: '';
+            box-shadow: inset 0px 2.18616px 2.91488px rgba(0, 0, 0, 0.25),
+                inset -1.45744px -2.91488px 2.91488px #ffffff;
+            @apply absolute top-8 left-[39%] w-20 h-3 bg-gray-200;
+        }
+    }
+    &_Wrapper {
+		@apply max-w-[23.8rem] m-auto px-5 block;
+		@apply sm:max-w-[60.7rem] sm:px-5 sm:m-auto sm:flex sm:flex-row-reverse sm:justify-between sm:items-center;
+		@apply lg:max-w-[63.063rem] m-auto;
+		@apply md:max-w-[70.625rem] md:p-[1.25rem];
+        .Wrapper_map {
+            @apply h-[400px];
+            @apply sm:h-[440px] sm:w-[340px];
+            @apply lg:h-[440px] lg:w-[440px];
+            @apply md:h-[440px] md:w-[550px];
+            @apply xl:h-[692px] xl:w-[810px];
+        }
+        .Wrapper_address {
+            @apply text-left;
+            @apply sm:pl-10;
+            @apply lg:pl-20;
+            @apply xl:pl-[0px];
+            h3 {
+                @apply hidden;
+                @apply sm:block sm:font-[700] sm:text-[20px] sm:mb-[14px];
+                @apply xl:block sm:font-[700] xl:text-[28px] xl:mb-[26px];
+            }
+            h4 {
+                @apply font-[600] text-[17px] my-5;
+                @apply sm:font-[600] sm:text-[12px];
+                @apply xl:font-[600] xl:text-[18px];
+            }
+            .Wrapper_item {
+                @apply my-9;
+                p {
+                    @apply mb-2 text-[17px] font-[500];
+                    @apply sm:text-[12px] sm:font-[400];
+                    @apply xl:text-[18px] xl:font-[400];
+                }
+            }
+        }
+    }
+}

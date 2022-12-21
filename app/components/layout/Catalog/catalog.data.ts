@@ -76,7 +76,7 @@ export const categoryData: IСategory = {
 export const subСategoryData: ISubСategory = {
 	subCategory: [
 		{ id: 1, category_type: 1, name: 'Аксессуары' },
-		{ id: 2, category_type: 1, name: 'Верхняя одежда' },
+		{ id: 2, category_type: 2, name: 'Верхняя одежда' },
 		{ id: 3, category_type: 1, name: 'Головные уборы' },
 		{ id: 4, category_type: 1, name: 'Домашняя одежда' },
 	],

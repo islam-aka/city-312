@@ -1,0 +1,12 @@
+.auth {
+	@apply bg-[#0F0F0F] w-full h-[100vh] flex font-['Gilroy'];
+	input:-webkit-autofill,
+	input:-webkit-autofill:hover,
+	input:-webkit-autofill:focus,
+	input:-webkit-autofill:active {
+		-webkit-box-shadow: 0 0 0 30px white inset !important;
+	}
+	&Img {
+		@apply w-[50%] hidden lg:block;
+	}
+}
