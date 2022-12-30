@@ -2,14 +2,14 @@
 	@apply w-[306px] h-[40px] font-['Gilroy'];
 
 	.dropdown__select {
-		@apply flex justify-between w-full bg-white mb-[1px] rounded-t-lg py-[10px] px-[15px] text-black-900 cursor-pointer transition ease-in-out;
+		@apply flex justify-between bg-[#eeeeee] w-full  mb-[1px] rounded-t-lg py-[10px] px-[15px] text-black-900 cursor-pointer transition ease-in-out;
 		svg {
 			@apply w-[19px] h-[18px] rotate-[90deg] transition ease-in-out;
 		}
 	}
 
 	.dropdown__select_none {
-		@apply flex justify-between w-full bg-white mb-[1px]  rounded-[10px] py-[10px] px-[15px] text-black-900 cursor-pointer;
+		@apply flex justify-between w-full bg-[#eeeeee]  mb-[1px]  rounded-[10px] py-[10px] px-[15px] text-black-900 cursor-pointer;
 
 		svg {
 			@apply w-[19px] h-[18px] rotate-[-90deg] transition ease-in-out;
@@ -17,7 +17,7 @@
 	}
 
 	.dropdown__list {
-		@apply flex gap-[10px] invisible opacity-0 flex-col items-center bg-white text-black-900 rounded-xl transition ease-in-out p-4 text-[16px];
+		@apply flex gap-[10px] invisible opacity-0 flex-col items-center bg-[#eeeeee] text-black-900 rounded-xl transition ease-in-out p-4 text-[16px];
 
 		.dropdown__list__item {
 			@apply cursor-pointer w-full;
@@ -28,7 +28,7 @@
 		}
 	}
 	.dropdown__list_none {
-		@apply flex flex-col gap-[10px] text-[16px] bg-white text-black-900 transition ease-in-out relative z-10 rounded-b-lg p-4;
+		@apply flex flex-col gap-[10px] text-[16px] bg-[#eeeeee] text-black-900 transition ease-in-out relative z-10 rounded-b-lg p-4;
 
 		.dropdown__list__item {
 			@apply cursor-pointer w-full;

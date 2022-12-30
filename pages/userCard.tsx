@@ -6,6 +6,7 @@ import UserCards from '@/components/layout/UserCard/UserCard'
 import styles from './userCard.module.scss'
 
 import { userProfile } from '@/components/layout/Profile/profile.data'
+import { userProfileCard } from '@/components/layout/UserCard/userCard.data'
 
 const UserCard: FC = () => {
 	return (
@@ -16,7 +17,7 @@ const UserCard: FC = () => {
 					<Profile {...userProfile} />
 				</div>
 				<div>
-					<UserCards {...userProfile} />
+					<UserCards {...userProfileCard} />
 				</div>
 			</div>
 			<Footer />

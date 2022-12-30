@@ -104,7 +104,7 @@ const UserProfile: FC<IProfile> = (user) => {
 					</a>
 				</Link>
 
-				<Link href="/favorites">
+				<Link href={!user.isPartner ? '/favorites' : '/createStocksPages'}>
 					<a
 						className={
 							router.pathname === '/favorites' ? styles.active : styles.none

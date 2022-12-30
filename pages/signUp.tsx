@@ -15,7 +15,7 @@ const SignUp: FC = () => {
 				<div className={styles.registration__btn}>
 					<h2>РЕГИСТРАЦИЯ</h2>
 					<div>
-						<Link href="/userRegistration">
+						<Link href="/userRegistrationPages">
 							<Btn>я пользователь карты</Btn>
 						</Link>
 						<Link href="/partnerRegistration">

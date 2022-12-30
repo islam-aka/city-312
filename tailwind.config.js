@@ -40,6 +40,9 @@ module.exports = {
 			red: {
 				400: '#C82D2D',
 			},
+			blue: {
+				400: '#0F3E9A',
+			},
 			darkBlue: {
 				900: '#132836',
 			},

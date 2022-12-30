@@ -1,10 +1,10 @@
 .custom_slider {
-  @apply max-w-[23.8rem] m-auto px-5 bg-primary py-5 ;
-  @apply sm:max-w-[60.7rem] sm:px-5 sm:m-auto;
-  @apply lg:max-w-[63.063rem] m-auto;
-  @apply md:max-w-[70.625rem] md:p-[1.25rem];
+  @apply m-auto px-5 bg-primary py-5;
+  @apply sm:px-5 sm:m-auto;
+  @apply m-auto;
+  @apply md:p-[1.25rem];
   .mySwiper {
-    @apply w-[500px] m-auto ;
+    @apply w-[500px] m-auto;
     @apply lg:w-[600px];
     @apply md:w-[800px];
     @apply xl:w-[1100px];
@@ -28,17 +28,16 @@
           }
           .overlay_logo {
             @apply w-[95%] bottom-[-10px] flex items-center justify-between absolute right-[6px];
-            .share{
+            .share {
               @apply w-[30px] p-[5px] bg-white rounded-[50px];
               svg {
-
               }
             }
-            .logo{
+            .logo {
               @apply w-[43px];
               @apply lg:w-[43px];
               @apply md:w-[60px];
-              @apply xl:w-[80px] ;
+              @apply xl:w-[80px];
             }
             .heart2 {
               @apply p-[5px] bg-white rounded-[50px];
@@ -56,19 +55,17 @@
             @apply md:text-[14px];
             @apply xl:text-[20px];
           }
-          p{
+          p {
             @apply font-[400] text-[6px] py-2;
             @apply lg:text-[6px];
             @apply md:text-[10px];
             @apply xl:text-[12px];
-            
           }
           button {
             @apply font-[500] text-[9px] py-[7px] px-[39px] rounded-md text-[#fff];
             @apply md:font-[500] md:text-[12px] md:py-[9px] md:px-[55px];
             @apply xl:font-[500] xl:text-[17px] xl:py-[12px] xl:px-[74px];
-            background: linear-gradient(0deg, #7EC9F5 0%, #3957ED 97.5%);
-
+            background: linear-gradient(0deg, #7ec9f5 0%, #3957ed 97.5%);
           }
         }
       }
@@ -77,7 +74,6 @@
   .mainBtn {
     @apply w-[260px] m-auto;
     button {
-      
     }
   }
 }

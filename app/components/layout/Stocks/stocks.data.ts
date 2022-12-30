@@ -1,4 +1,31 @@
-import { IStocks } from './Stocks.interface'
+import {
+	IStocks,
+	ITypeOfBusinessActivity,
+	ITypeOfDiscount,
+} from './Stocks.interface'
+
+export const typeOfDiscount: ITypeOfDiscount = {
+	data: [
+		{ id: 1, title: 'Процент ' },
+		{ id: 2, title: 'Кэшбек ' },
+		{ id: 3, title: 'Накопительный' },
+		{ id: 4, title: 'Бонус(подарок посещение) ' },
+		{ id: 5, title: 'Реферальная программа ' },
+		{ id: 6, title: 'Ограниченная по времени  ' },
+		{ id: 7, title: 'Ограниченная по количество скидок  ' },
+	],
+}
+
+export const typeOfBusinessActivityData: ITypeOfBusinessActivity = {
+	data: [
+		{ id: 1, title: 'ОсОО' },
+		{ id: 2, title: 'ЗАО' },
+		{ id: 3, title: 'ИП' },
+		{ id: 4, title: 'ЧП' },
+		{ id: 5, title: 'ОАО' },
+		{ id: 6, title: 'ООО' },
+	],
+}
 
 export const stocksCard: IStocks = {
 	data: [

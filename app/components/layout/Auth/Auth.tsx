@@ -10,6 +10,8 @@ import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 
 const Auth = () => {
+	const login = () => {}
+
 	return (
 		<>
 			<Header />

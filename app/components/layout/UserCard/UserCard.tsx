@@ -1,9 +1,9 @@
 import Btn from '@/components/ui/Btn/Btn'
 import React, { FC } from 'react'
-import { IProfile } from '../Profile/profile.interface'
+import { IUserProfile } from '../UserCard/userCard.interface'
 import styles from './UserCard.module.scss'
 
-const UserCards: FC<IProfile> = (user) => {
+const UserCards: FC<IUserProfile> = (user) => {
 	console.log(user)
 
 	return (
@@ -23,6 +23,12 @@ const UserCards: FC<IProfile> = (user) => {
 								Сэкономлено
 							</p>
 							<p className={styles.bg}>15000 сом</p>
+						</div>
+						<div>
+							<p className="text-[#545454] text-[14px] leading-[130%]">
+								Генирация URl
+							</p>
+							<p className={styles.bg}>{user.generationURL}</p>
 						</div>
 					</div>
 					<div className="flex lg:gap-[30px] gap-[15px]">

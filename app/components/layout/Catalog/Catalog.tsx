@@ -165,13 +165,14 @@ const Catalog: FC<TMenu> = ({ activityTypes, categorys, subCategorys }) => {
 																	'linear-gradient(180deg, #FFE25A 0%, #FFA852 100%)',
 																borderRadius: '10px',
 																padding: '10px',
+																color: 'black',
 														  }
 														: {
 																background: 'none',
 														  }
 												}
 												className={
-													'text-[18px] font-medium leading-[21px] text-black-900 cursor-pointer'
+													'text-[18px] text-blue-400 font-medium leading-[21px] cursor-pointer'
 												}
 												key={id}
 											>

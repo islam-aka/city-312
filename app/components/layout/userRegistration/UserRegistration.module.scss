@@ -8,11 +8,12 @@
 			@apply not-italic font-bold text-[20px] leading-[27px] text-center;
 		}
 		.userRegistration__form {
+			@apply mt-3 mb-6;
 			.userRegistration__ava {
 				@apply flex items-center justify-between mb-4;
 
 				input {
-					@apply w-[120px] text-white bg-transparent;
+					@apply w-[138px] text-white bg-transparent;
 					background: none;
 				}
 			}
@@ -29,15 +30,7 @@
 				@apply placeholder:font-normal;
 			}
 		}
-		.userRegistration__offer {
-			@apply flex justify-between my-8 w-40 mx-auto;
-			svg {
-				@apply w-[17px] h-[13px];
-			}
-			p {
-				@apply text-[16px] leading-[17px] text-white;
-			}
-		}
+
 		.userRegistration__reCaptcha {
 			@apply flex justify-center;
 		}

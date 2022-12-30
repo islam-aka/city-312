@@ -16,6 +16,7 @@ export interface IUserProfile {
 	discount_card_number: string
 	contract_offer: string
 	following: IUserFollowing[]
+	generationURL: string
 }
 
 export interface IUser {

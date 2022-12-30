@@ -2,19 +2,123 @@
 	@apply flex flex-wrap justify-center xl:justify-start max-w-[1135px] w-full mx-auto;
 }
 .createStocks {
-	@apply font-['Gilroy'];
-	.nameStocks {
+	@apply font-['Gilroy'] max-w-[1200px] w-full mx-auto flex gap-5 my-[126px];
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		@apply outline-none  bg-transparent;
+	}
+	.stocksBlock {
 		@apply flex relative rounded-[10px] items-center px-[15px] py-[10px] border-b-2 bg-gray-300;
 
 		input {
 			@apply outline-none  bg-transparent;
 		}
 	}
+	.typeStocks {
+		@apply cursor-pointer;
+		.stocksBlock {
+			@apply flex relative rounded-[10px] items-center pl-[15px] pr-[30px] py-[10px] border-b-2 bg-gray-300;
+
+			input {
+				@apply outline-none  bg-transparent;
+			}
+		}
+		.typeStocksNone {
+			@apply bg-white absolute z-20 w-[386px] grid gap-2 p-3;
+			-webkit-box-shadow: 0px 0px 25px 0px rgba(34, 60, 80, 0.12);
+			-moz-box-shadow: 0px 0px 25px 0px rgba(34, 60, 80, 0.12);
+			box-shadow: 0px 0px 25px 0px rgba(34, 60, 80, 0.12);
+			P {
+				@apply cursor-pointer;
+			}
+		}
+		.typeStocksOpen {
+			@apply w-[386px] overflow-hidden h-0 grid gap-2;
+			P {
+				@apply cursor-pointer;
+			}
+		}
+	}
+	.stocksDes {
+		@apply flex relative rounded-[10px] items-center px-[15px] py-[10px] border-b-2 bg-gray-300 h-[108px];
+		textarea {
+			@apply bg-transparent resize-none outline-none h-full;
+		}
+	}
 	.priceStocks {
-		@apply flex relative rounded-[10px] items-center px-[15px] py-[10px] border-b-2 bg-gray-300;
+		@apply flex justify-between relative rounded-[10px] items-center pl-[15px] pr-[30px] py-[10px] border-b-2 bg-gray-300;
 
 		input {
 			@apply outline-none  bg-transparent;
+		}
+	}
+	.percentStocks {
+		@apply flex  relative rounded-[10px] items-center pl-[15px] pr-[30px] py-[10px] border-b-2 bg-gray-300;
+		p {
+			@apply mr-2;
+		}
+		input {
+			@apply outline-none  bg-transparent;
+		}
+	}
+	.contactStocks {
+		@apply flex justify-between relative rounded-[10px] items-center pl-[15px] pr-[30px] py-[10px] border-b-2 bg-gray-300;
+
+		input {
+			@apply outline-none  bg-transparent;
+		}
+	}
+	.socialStocks {
+		@apply flex items-center gap-[25px];
+		div {
+			@apply flex items-center rounded-[10px] pl-[15px] w-full h-[46px] bg-gray-300;
+			input {
+				@apply outline-none  bg-transparent w-full;
+			}
+		}
+	}
+	.createStocksWork {
+		@apply flex flex-col justify-center items-center;
+		p {
+			@apply mb-2;
+		}
+		.partnerRegistration__hour {
+			@apply text-black-900 flex justify-between mt-[25px] w-[305px];
+
+			div {
+				@apply w-[145px] flex items-center rounded-2xl bg-[#eeeeee] py-[12.5px] px-[15px];
+
+				input {
+					@apply w-full ml-1 outline-none bg-transparent;
+				}
+				svg {
+					@apply w-5 h-5;
+				}
+			}
+		}
+		.userRegistration__check {
+			@apply flex flex-col mt-8 mb-6  mx-auto;
+			svg {
+				@apply w-[17px] h-[13px];
+			}
+			p {
+				@apply text-[16px] leading-[17px];
+			}
+
+			.userRegistration__reCaptcha {
+				@apply flex justify-center;
+			}
+			.userRegistration__btn {
+				@apply text-center mt-6 text-[16px] leading-5;
+
+				button {
+					@apply w-[240px]  text-black-900  mb-3;
+				}
+				p {
+					@apply text-red-400 cursor-pointer;
+				}
+			}
 		}
 	}
 }
